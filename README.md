@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Picto - Personal Portfolio Free Template
 
 #### Preview
@@ -45,3 +46,7 @@ Developed by ThemeWagon and development team.
 - Design and Code is Copyright &copy; <a href="http://themewagon.com/" target="_blank">ThemeWagon</a>
 - Licensed cover under [MIT]
 - Developed by <a href="http://themewagon.com/" target="_blank">ThemeWagon</a>
+=======
+# Portofolio
+portofolio, latihan, dan project mahasiswa
+>>>>>>> f4facc830f6ec272c562d8b44c1a84702534866e
