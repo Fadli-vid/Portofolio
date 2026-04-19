@@ -4,4 +4,14 @@
   background-repeat: no-repeat;
   padding-left: 2px;
   padding-right: 2px;
+  /* Pastikan teks yang di-highlight selalu gelap untuk light mode */
+  color: #111827; 
+}
+
+/* Jika menggunakan daisyUI dengan data-theme */
+[data-theme="dark"] .bg-highlight,
+.dark .bg-highlight {
+  /* Ubah stabilitas warna highlight di mode gelap, misalnya menggunakan ungu dari brand Anda atau biru gelap */
+  background: linear-gradient(to top, #9929fb80 40%, transparent 40%);
+  color: #ffffff; /* Teks menjadi terang */
 }

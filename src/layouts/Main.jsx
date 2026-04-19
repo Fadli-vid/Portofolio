@@ -5,10 +5,11 @@ import ScrollToTop from "../components/common/scrollToTop/ScrollToTop";
 
 const Main = () => {
   return (
-    <div data-theme={"light"} className="relative">
+    // Hapus data-theme={"light"} agar mengikuti tema dari document.documentElement
+    <div className="relative bg-base-100 text-base-content transition-colors duration-300">
       <NavBar />
       <Outlet />
-      <div className="bg-[#2A374A]">
+      <div className="bg-neutral text-neutral-content">
         <Footer />
       </div>
       <ScrollToTop />

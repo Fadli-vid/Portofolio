@@ -19,19 +19,25 @@ const Home = () => {
           <Profile />
         </div>
       </div>
-      <div className="bg-soft-white pt-30">
+      
+      <div className="bg-base-200 pt-30 transition-colors duration-300">
         <WorkProcess />
       </div>
+      
       <Portfolio />
-      <div className="bg-gray-900">
+      
+      <div className="bg-neutral text-neutral-content transition-colors duration-300">
         <WorkTogether />
       </div>
+      
       <div className="blog-background">
         <Blog />
       </div>
-      <div className="bg-soft-white">
+      
+      <div className="bg-base-200 transition-colors duration-300">
         <Profession />
       </div>
+      
       <HappyClients />
       <Testimonial />
       <Contact />

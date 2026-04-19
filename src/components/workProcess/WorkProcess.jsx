@@ -38,18 +38,18 @@ const workStepData = [
 const WorkProcess = () => {
   return (
     <div
-      className="content grid xl:grid-cols-2 xl:items-center px-2 py-5 md:py-10 lg:py-25 xl:py-35 max-xxl:px-4"
+      className="content grid xl:grid-cols-2 xl:items-center px-2 py-5 md:py-10 lg:py-25 xl:py-35 max-xxl:px-4 transition-colors duration-300"
       id="work-process"
     >
-      <div className="lg:pe-10 xl:pe-35.75 max-xs:mb-3 max-xl:mb-8">
+      <div className="lg:pe-10 xl:pe-35.75 max-xs:mb-3 max-xl:mb-8 text-base-content">
         <p className="section-title max-xl:text-center">Work Process</p>
-        <p className="mt-6 mb-4 md:text-[18px] text-sm font-normal max-xl:text-center text-gray-500">
+        <p className="mt-6 mb-4 md:text-[18px] text-sm font-normal max-xl:text-center opacity-70">
           Driven by design and powered by code, I create digital interfaces that
           feel intuitive and perform seamlessly. Every layout, animation, and
           component is crafted with intention — merging usability with visual
           clarity,
         </p>
-        <p className="mt-6 md:text-[18px] text-sm font-normal max-xl:text-center text-gray-500">
+        <p className="mt-6 md:text-[18px] text-sm font-normal max-xl:text-center opacity-70">
           I blend clean design with efficient code to build engaging,
           user-friendly web experiences that stand out.
         </p>
@@ -60,7 +60,7 @@ const WorkProcess = () => {
           return (
             <WorkSteps
               data={data}
-              style={`max-xs:mt-3 p-4 sm:p-8 bg-white aspect-auto sm:max-w-78 ${
+              style={`max-xs:mt-3 p-4 sm:p-8 bg-base-100 aspect-auto sm:max-w-78 transition-all duration-300 ${
                 index % 2 == 1 ? "xs:ms-3 xs:mt-6 " : "xs:mb-6"
               }`}
               key={index}
