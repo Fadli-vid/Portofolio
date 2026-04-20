@@ -13,12 +13,12 @@ const telegramSVG = (
 );
 
 const commonClass =
-  "input input-lg border-0 border-b-2 focus:outline-none focus:placeholder:text-picto-primary placeholder:text-[15px] md:placeholder:text-lg focus:border-picto-primary border-[#E6E8EB] w-full rounded-none px-0";
+  "input input-lg border-0 border-b-2 bg-transparent text-base-content focus:outline-none focus:placeholder:text-picto-primary placeholder:text-base-content/50 focus:border-picto-primary border-base-content/20 w-full rounded-none px-0 transition-colors duration-300";
 
 const Form = () => {
   return (
-    <div>
-      <p className="text-[12px] xs:text-[14px] max-lg:text-center sm:text-lg font-normal text-soft-dark">
+    <div className="text-base-content">
+      <p className="text-[12px] xs:text-[14px] max-lg:text-center sm:text-lg font-normal opacity-70">
         I'm always open to discussing product design work or partnership
         opportunities.
       </p>
@@ -47,7 +47,7 @@ const Form = () => {
             <input
               type="text"
               placeholder="Budget*"
-              className={`${commonClass} xs:w-[50%] me-5`}
+              className={`${commonClass} xs:w-[50%] xs:me-5`}
               required
             />
             <input

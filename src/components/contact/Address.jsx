@@ -6,28 +6,31 @@ const Address = ({ item }) => {
 
   return (
     <div
-      className="max-w-84 p-3 md:p-3.75 lg:p-6 flex xs:not-odd:my-3 rounded-[10px] bg-white  hover:scale-[1] duration-450  cursor-pointer hover:shadow-[0px_0px_37px_5px_rgba(0,_0,_0,_0.1)] shadow-gray-200 max-sm:mx-auto"
-      /* Scale effect:  */
+      // Mengubah bg-white menjadi bg-base-200 agar terlihat popup/kontras di atas bg-base-100 dari Contact.jsx
+      className="w-full sm:max-w-84 p-3 md:p-3.75 lg:p-6 flex xs:not-odd:my-3 rounded-[10px] bg-base-200 hover:scale-[1.02] duration-300 cursor-pointer hover:shadow-lg shadow-md shadow-black/5 dark:shadow-white/5 border border-base-content/5 max-sm:mx-auto transition-all"
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >
       <div
-        className={`h-10 md:h-12 aspect-square ${
-          hover ? "bg-picto-primary" : "bg-[#EDD8FF80]"
+        className={`h-10 md:h-12 aspect-square transition-colors duration-300 ${
+          // Ganti bg hardcode dengan versi opacity dari theme
+          hover ? "bg-picto-primary" : "bg-picto-primary/10"
         } center rounded-[4px]`}
       >
         <FontAwesomeIcon
           icon={item?.icon}
-          className={`text-lg md:text-xl ${
+          className={`text-lg md:text-xl transition-colors duration-300 ${
             hover ? "text-white" : "text-picto-primary"
           }`}
         />
       </div>
-      <div className="ms-3.25">
-        <p className="text-[12px] md:text-[14px] text-[#424E60] font-normal">
+      <div className="ms-3.25 text-base-content">
+        {/* Menghapus text-[#424E60], memakai opacity */}
+        <p className="text-[12px] md:text-[14px] font-normal opacity-70">
           {item?.title}:
         </p>
-        <p className="text-[14px] md:text-[16px] text-[#132238] font-medium">
+        {/* Menghapus text-[#132238] */}
+        <p className="text-[14px] md:text-[16px] font-medium">
           {item?.description}
         </p>
       </div>

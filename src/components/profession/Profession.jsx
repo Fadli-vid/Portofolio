@@ -24,18 +24,18 @@ const rolesData = [
 const Profession = () => {
   return (
     <div
-      className="content grid md:grid-cols-2 max-xxl:px-4 xxl:px-2 py-10 md:py-15 lg:py-37.5"
+      className="content grid md:grid-cols-2 max-xxl:px-4 xxl:px-2 py-10 md:py-15 lg:py-37.5 transition-colors duration-300"
       id="services"
     >
-      <div className="flex flex-col justify-between h-fit md:pe-8 lg:pe-35.75 max-md:text-center my-auto">
+      <div className="flex flex-col justify-between h-fit md:pe-8 lg:pe-35.75 max-md:text-center my-auto text-base-content">
         <p className="section-title max-md:text-center">What I do?</p>
-        <div className="mt-6 text-[14px]">
-          <p className="text-xs sm:text-lg font-normal text-gray-400 mb-4">
+        <div className="mt-6">
+          <p className="text-xs sm:text-lg font-normal opacity-70 mb-4">
             I specialize in designing user experiences, crafting engaging
             interfaces, and building robust web applications that deliver value
             and usability.
           </p>
-          <p className="text-xs sm:text-lg font-normal text-gray-400">
+          <p className="text-xs sm:text-lg font-normal opacity-70">
             My approach combines creativity and technical expertise to deliver
             solutions that are both visually appealing and highly functional for
             users.

@@ -1,4 +1,4 @@
-import Fadli2 from "../../assets/Fadli2.png";
+import Fadli2 from "../../assets/person.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import SocialMedia from "../common/socialMedia/SocialMedia";

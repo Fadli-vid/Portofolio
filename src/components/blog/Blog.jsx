@@ -78,10 +78,11 @@ const blogData = [
 
 const Blog = () => {
   return (
-    <div className="content py-25 px-2 relative" id="blog">
+    <div className="content py-25 px-2 relative transition-colors duration-300" id="blog">
       <div className="max-w-135 text-center mx-auto pb-17.5">
-        <p className="section-title pb-6">Blog</p>
-        <p className="text-xs xs:text-[16px] md:text-lg text-gray-400">
+        <p className="section-title pb-6 text-base-content">Blog</p>
+        {/* Ganti text-gray-400 dengan kombinasi opacity dan text-base-content */}
+        <p className="text-xs xs:text-[16px] md:text-lg text-base-content opacity-70">
           Check out my recent blog posts where I share insights on design,
           development, and the latest industry trends.
         </p>
@@ -95,10 +96,10 @@ const Blog = () => {
         {blogData?.map((data, index) => (
           <SwiperSlide
             key={index}
-            className="mb-10" /* pagination margin bottom to 40px */
+            className="mb-10"
             style={{ backgroundColor: "rgba(0,0,0,0)" }}
           >
-            <MonoBlog data={data} key={index} />
+            <MonoBlog data={data} />
           </SwiperSlide>
         ))}
       </Swiper>

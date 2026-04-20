@@ -1,3 +1,13 @@
+/* Menyesuaikan warna bullet pagination Swiper agar terlihat di dark mode */
+.swiper-pagination-bullet {
+  background: var(--fallback-bc,oklch(var(--bc)/.3)) !important; /* Mengikuti warna konten dasar */
+  opacity: 0.5;
+}
+.swiper-pagination-bullet-active {
+  background: #9929fb !important; /* Warna primer Anda */
+  opacity: 1;
+}
+
 .swiper-pagination-bullet-active {
   background-color: #210c33 !important;
   width: 30px;

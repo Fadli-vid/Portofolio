@@ -1,23 +1,22 @@
 const MonoBlog = ({ data }) => {
   return (
-    <div className="overflow-hidden rounded-lg border border-gray-100 hover:shadow-2xl bg-white shadow-gray-300 transition-all duration-300">
-      <a href={data?.link}>
-        <img
-          src={data?.image}
-          alt="Blog"
-          className="w-full h-56.5 object-cover "
-        />
-        <div className="m-6">
-          <p className="text-[10px] xs:text-[14px] font-normal text-gray-400 ">
-            {data?.date} / {data?.comments} Comments
-          </p>
-          <p className="text-[14px] xs:text-lg font-medium text-[#333333]">
-            {data?.title.length > 40
-              ? `${data?.title.slice(0, 40)}...`
-              : data?.title}
-          </p>
+    <div className="bg-base-100 rounded-xl overflow-hidden shadow-md shadow-black/5 dark:shadow-white/5 border border-base-content/10 transition-all duration-300 hover:shadow-xl">
+      <img src={data?.image} alt={data?.title} className="w-full h-48 object-cover" />
+      <div className="p-5 text-base-content">
+        <div className="flex justify-between items-center text-xs opacity-60 mb-3">
+          <span>{data?.date}</span>
+          <span>{data?.comments} Comments</span>
         </div>
-      </a>
+        <h3 className="text-lg font-semibold leading-tight mb-4 hover:text-picto-primary transition-colors">
+          <a href={data?.link}>{data?.title}</a>
+        </h3>
+        <a 
+          href={data?.link} 
+          className="text-picto-primary font-medium text-sm hover:underline"
+        >
+          Read More →
+        </a>
+      </div>
     </div>
   );
 };
