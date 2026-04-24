@@ -1,4 +1,4 @@
-const TestimonialTemplate = ({ testimonial }) => {
+/*const TestimonialTemplate = ({ testimonial }) => {
   return (
     <div className="flex flex-col h-full">
       <div className="text-center mx-auto">
@@ -24,3 +24,4 @@ const TestimonialTemplate = ({ testimonial }) => {
 };
 
 export default TestimonialTemplate;
+*/
