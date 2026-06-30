@@ -1,21 +1,18 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 const MonoBlog = ({ data }) => {
   return (
-    <div className="bg-base-100 rounded-xl overflow-hidden shadow-md shadow-black/5 dark:shadow-white/5 border border-base-content/10 transition-all duration-300 hover:shadow-xl">
-      <img src={data?.image} alt={data?.title} className="w-full h-48 object-cover" />
-      <div className="p-5 text-base-content">
-        <div className="flex justify-between items-center text-xs opacity-60 mb-3">
-          <span>{data?.date}</span>
-          <span>{data?.comments} Comments</span>
-        </div>
-        <h3 className="text-lg font-semibold leading-tight mb-4 hover:text-picto-primary transition-colors">
-          <a href={data?.link}>{data?.title}</a>
-        </h3>
-        <a 
-          href={data?.link} 
-          className="text-picto-primary font-medium text-sm hover:underline"
-        >
-          Read More →
-        </a>
+    <div className="bg-base-100 rounded-xl p-6 shadow-md shadow-black/5 dark:shadow-white/5 border border-base-content/10 transition-all duration-300 hover:shadow-xl h-full flex flex-col">
+      <h3 className="text-xl font-bold mb-2 text-base-content">{data.category}</h3>
+      <p className="text-sm text-base-content opacity-70 mb-6 flex-grow">{data.description}</p>
+      
+      <div className="flex flex-wrap gap-3">
+        {data.skills.map((skill, index) => (
+          <div key={index} className="flex items-center gap-2 bg-base-200 px-3 py-2 rounded-lg text-sm font-medium text-base-content transition-colors hover:text-picto-primary">
+            <FontAwesomeIcon icon={skill.icon} className="text-lg text-picto-primary" />
+            <span>{skill.name}</span>
+          </div>
+        ))}
       </div>
     </div>
   );

@@ -10,7 +10,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const socialIcons = [
   { icon: faFacebookF, link: "#!" },
   { icon: faWhatsapp, link: "https://wa.me/6282258779965" },
-  { icon: faInstagram, link: "#!" },
+  { icon: faInstagram, link: "https://www.instagram.com/fdlrr889/" },
   { icon: faLinkedin, link: "https://www.linkedin.com/in/fadli-santoso-murmita-37b63322a" },
   { icon: faGithub, link: "https://github.com/Fadli-vid" },
 ];
