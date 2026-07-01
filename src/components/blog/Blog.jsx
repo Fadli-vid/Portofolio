@@ -6,7 +6,7 @@ import "swiper/css/pagination";
 import "./blog.css";
 
 import {
-  SiHtml5, SiCss3, SiJavascript, SiReact, SiNextdotjs, SiTailwindcss, SiBootstrap,
+  SiHtml5, SiCss, SiJavascript, SiReact, SiNextdotjs, SiTailwindcss, SiBootstrap,
   SiPhp, SiLaravel, SiCodeigniter, SiMysql, SiPostgresql,
   SiPython, SiScikitlearn,
   SiFigma, SiBlender
@@ -36,7 +36,7 @@ const skillsData = [
     description: "Membangun antarmuka web modern, responsif, dan interaktif dengan fokus pada pengalaman pengguna.",
     skills: [
       { name: "HTML", icon: SiHtml5, color: "#E34F26" },
-      { name: "CSS", icon: SiCss3, color: "#1572B6" },
+      { name: "CSS", icon: SiCss, color: "#1572B6" },
       { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E" },
       { name: "React", icon: SiReact, color: "#61DAFB" },
       { name: "Next.js", icon: SiNextdotjs, color: "" },
