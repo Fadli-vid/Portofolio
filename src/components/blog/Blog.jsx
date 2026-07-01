@@ -6,15 +6,12 @@ import "swiper/css/pagination";
 import "./blog.css";
 
 import {
-  faReact,
-  faFigma,
-  faNodeJs,
-  faPython,
-  faHtml5,
-  faCss3Alt,
-  faJs,
-} from "@fortawesome/free-brands-svg-icons";
-import { faDatabase, faChartLine, faPenNib } from "@fortawesome/free-solid-svg-icons";
+  SiHtml5, SiCss3, SiJavascript, SiReact, SiNextdotjs, SiTailwindcss, SiBootstrap,
+  SiPhp, SiLaravel, SiCodeigniter, SiMysql, SiPostgresql,
+  SiPython, SiScikitlearn,
+  SiFigma, SiBlender
+} from "react-icons/si";
+import { FaPenNib, FaPalette } from "react-icons/fa";
 
 // Breakpoints for swiperJS
 const custom_breakpoints = {
@@ -36,41 +33,49 @@ const skillsData = [
   {
     id: 1,
     category: "Frontend",
-    description: "Membangun antarmuka pengguna yang interaktif dan responsif.",
+    description: "Membangun antarmuka web modern, responsif, dan interaktif dengan fokus pada pengalaman pengguna.",
     skills: [
-      { name: "React", icon: faReact },
-      { name: "HTML5", icon: faHtml5 },
-      { name: "CSS3", icon: faCss3Alt },
-      { name: "JavaScript", icon: faJs },
+      { name: "HTML", icon: SiHtml5, color: "#E34F26" },
+      { name: "CSS", icon: SiCss3, color: "#1572B6" },
+      { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E" },
+      { name: "React", icon: SiReact, color: "#61DAFB" },
+      { name: "Next.js", icon: SiNextdotjs, color: "" },
+      { name: "Tailwind CSS", icon: SiTailwindcss, color: "#06B6D4" },
+      { name: "Bootstrap", icon: SiBootstrap, color: "#7952B3" },
     ]
   },
   {
     id: 2,
     category: "Backend",
-    description: "Membuat logika server dan API yang handal serta aman.",
+    description: "Mengembangkan logika aplikasi, REST API, autentikasi, dan pengelolaan database yang aman dan efisien.",
     skills: [
-      { name: "Node.js", icon: faNodeJs },
-      { name: "Python", icon: faPython },
-      { name: "Database", icon: faDatabase },
+      { name: "PHP", icon: SiPhp, color: "#777BB4" },
+      { name: "Laravel", icon: SiLaravel, color: "#FF2D20" },
+      { name: "CodeIgniter", icon: SiCodeigniter, color: "#EE4323" },
+      { name: "MySQL", icon: SiMysql, color: "#4479A1" },
+      { name: "PostgreSQL", icon: SiPostgresql, color: "#4169E1" },
     ]
   },
   {
     id: 3,
     category: "Data Analyst",
-    description: "Menganalisis data untuk menghasilkan insight berharga.",
+    description: "Mengolah, menganalisis, dan memvisualisasikan data untuk menghasilkan insight yang mendukung pengambilan keputusan.",
     skills: [
-      { name: "Python", icon: faPython },
-      { name: "SQL", icon: faDatabase },
-      { name: "Data Viz", icon: faChartLine },
+      { name: "Python", icon: SiPython, color: "#3776AB" },
+      { name: "Scikit-learn", icon: SiScikitlearn, color: "#F7931E" },
+      { name: "MySQL", icon: SiMysql, color: "#4479A1" },
+      { name: "PostgreSQL", icon: SiPostgresql, color: "#4169E1" },
     ]
   },
   {
     id: 4,
     category: "Design",
-    description: "Merancang UI/UX yang indah, estetis, dan mudah digunakan.",
+    description: "Mendesain antarmuka, identitas visual, ilustrasi, dan aset 3D untuk menghasilkan produk digital yang menarik.",
     skills: [
-      { name: "Figma", icon: faFigma },
-      { name: "UI/UX", icon: faPenNib },
+      { name: "Figma", icon: SiFigma, color: "#F24E1E" },
+      { name: "Blender 3D", icon: SiBlender, color: "#F5792A" },
+      { name: "Affinity Designer", icon: FaPenNib, color: "#1B5AA9" },
+      { name: "Canva", icon: FaPalette, color: "#00C4CC" },
     ]
   }
 ];
