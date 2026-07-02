@@ -9,7 +9,7 @@ import {
   SiHtml5, SiCss, SiJavascript, SiReact, SiNextdotjs, SiTailwindcss, SiBootstrap,
   SiPhp, SiLaravel, SiCodeigniter, SiMysql, SiPostgresql,
   SiPython, SiScikitlearn,
-  SiFigma, SiBlender
+  SiFigma, SiBlender, SiAseprite
 } from "react-icons/si";
 import { FaPenNib, FaPalette } from "react-icons/fa";
 
