@@ -36,7 +36,7 @@ const Contact = () => {
           <div>
             <div>
               <p className="text-[35px] max-lg:hidden font-semibold text-nowrap">
-                Let’s discuss your Project
+                Let’s discuss your Projec
               </p>
               <p className="text-[12px] xs:text-[14px] sm:text-lg md:text-lg max-lg:text-center pt-4 font-normal opacity-70">
                 I'm available for freelance work. Drop me a line if you have a
