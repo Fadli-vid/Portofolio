@@ -23,21 +23,27 @@ const Form = () => {
         opportunities.
       </p>
       <div className="mx-2">
-        <form className="flex flex-col gap-4 mt-4">
+        <form action="https://formsubmit.co/fadlisantoso889@gmail.com" method="POST" className="flex flex-col gap-4 mt-4">
+          {/* Hides FormSubmit captcha for a smoother experience */}
+          <input type="hidden" name="_captcha" value="false" />
+          
           <input
             type="text"
+            name="name"
             placeholder="Name*"
             className={`${commonClass}`}
             required
           />
           <input
             type="email"
+            name="email"
             placeholder="Email*"
             className={`${commonClass}`}
             required
           />
           <input
             type="text"
+            name="location"
             placeholder="Location*"
             className={`${commonClass}`}
             required
@@ -46,12 +52,14 @@ const Form = () => {
           <div className="flex max-xs:flex-col max-xs:gap-4">
             <input
               type="text"
+              name="budget"
               placeholder="Budget*"
               className={`${commonClass} xs:w-[50%] xs:me-5`}
               required
             />
             <input
               type="text"
+              name="subject"
               placeholder="Subject*"
               className={`${commonClass}`}
               required
@@ -60,6 +68,7 @@ const Form = () => {
 
           <input
             type="text"
+            name="message"
             placeholder="Message*"
             className={`${commonClass}`}
             required

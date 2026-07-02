@@ -11,17 +11,17 @@ const addressData = [
   {
     icon: faLocationDot,
     title: "Address",
-    description: "New Mexico, 31134",
+    description: "Perumahan Bumi Indah Persona Blok D8/25, Matoa Street Num.2, Kalisuren,Tajur Halang, Bogor Regency, West Java (16320)",
   },
   {
     icon: faEnvelope,
     title: "My Email",
-    description: "mymail@mail.com",
+    description: "fadlisantoso889@mail.com",
   },
   {
     icon: faPhone,
     title: "Call Me Now",
-    description: "00-123 00000",
+    description: "0822-5877-9965",
   },
 ];
 
