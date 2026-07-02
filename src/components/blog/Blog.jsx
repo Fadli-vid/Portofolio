@@ -76,6 +76,7 @@ const skillsData = [
       { name: "Blender 3D", icon: SiBlender, color: "#F5792A" },
       { name: "Affinity Designer", icon: FaPenNib, color: "#1B5AA9" },
       { name: "Canva", icon: FaPalette, color: "#00C4CC" },
+      { name: "aseprite", icon: SiAseprite, color: "#7D7BB2" },
     ]
   }
 ];
