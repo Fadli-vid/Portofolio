@@ -33,7 +33,7 @@ const skillsData = [
   {
     id: 1,
     category: "Frontend",
-    description: "Membangun antarmuka web modern, responsif, dan interaktif dengan fokus pada pengalaman pengguna.",
+    description: "Building modern, responsive, and interactive web interfaces with a focus on user experience.",
     skills: [
       { name: "HTML", icon: SiHtml5, color: "#E34F26" },
       { name: "CSS", icon: SiCss, color: "#1572B6" },
@@ -47,7 +47,7 @@ const skillsData = [
   {
     id: 2,
     category: "Backend",
-    description: "Mengembangkan logika aplikasi, REST API, autentikasi, dan pengelolaan database yang aman dan efisien.",
+    description: "Developing secure and efficient application logic, REST APIs, authentication, and database management.",
     skills: [
       { name: "PHP", icon: SiPhp, color: "#777BB4" },
       { name: "Laravel", icon: SiLaravel, color: "#FF2D20" },
@@ -59,7 +59,7 @@ const skillsData = [
   {
     id: 3,
     category: "Data Analyst",
-    description: "Mengolah, menganalisis, dan memvisualisasikan data untuk menghasilkan insight yang mendukung pengambilan keputusan.",
+    description: "Processing, analyzing, and visualizing data to generate insights that support decision-making.",
     skills: [
       { name: "Python", icon: SiPython, color: "#3776AB" },
       { name: "Scikit-learn", icon: SiScikitlearn, color: "#F7931E" },
@@ -71,7 +71,7 @@ const skillsData = [
   {
     id: 4,
     category: "Design",
-    description: "Mendesain antarmuka, identitas visual, ilustrasi, dan aset 3D untuk menghasilkan produk digital yang menarik.",
+    description: "Designing interfaces, visual identities, illustrations, and 3D assets to create engaging digital products.",
     skills: [
       { name: "Figma", icon: SiFigma, color: "#F24E1E" },
       { name: "Blender 3D", icon: SiBlender, color: "#F5792A" },
@@ -88,7 +88,7 @@ const Blog = () => {
       <div className="max-w-135 text-center mx-auto pb-17.5">
         <p className="section-title pb-6 text-base-content">My Skills</p>
         <p className="text-xs xs:text-[16px] md:text-lg text-base-content opacity-70">
-          Berikut adalah detail dari beberapa skill dan teknologi yang saya kuasai di berbagai bidang.
+          Here are the details of some skills and technologies I have mastered in various fields.
         </p>
       </div>
       <Swiper
