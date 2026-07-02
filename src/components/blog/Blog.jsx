@@ -8,7 +8,7 @@ import "./blog.css";
 import {
   SiHtml5, SiCss, SiJavascript, SiReact, SiNextdotjs, SiTailwindcss, SiBootstrap,
   SiPhp, SiLaravel, SiCodeigniter, SiMysql, SiPostgresql,
-  SiPython, SiScikitlearn,
+  SiPython, SiScikitlearn, SiMicrosoftexcel,
   SiFigma, SiBlender, SiAseprite
 } from "react-icons/si";
 import { FaPenNib, FaPalette } from "react-icons/fa";
@@ -65,6 +65,7 @@ const skillsData = [
       { name: "Scikit-learn", icon: SiScikitlearn, color: "#F7931E" },
       { name: "MySQL", icon: SiMysql, color: "#4479A1" },
       { name: "PostgreSQL", icon: SiPostgresql, color: "#4169E1" },
+      { name: "Ms Excel", icon: SiMicrosoftexcel, color: "#217346" },
     ]
   },
   {
