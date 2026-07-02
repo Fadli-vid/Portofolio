@@ -1,6 +1,6 @@
 const MonoBlog = ({ data }) => {
   return (
-    <div className="bg-base-100 rounded-xl p-6 shadow-md shadow-black/5 dark:shadow-white/5 border border-base-content/10 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 h-full flex flex-col">
+    <div className="bg-base-100 rounded-xl p-6 shadow-md shadow-black/5 dark:shadow-white/5 border border-base-content/10 transition-all duration-300 hover:shadow-xl hover:-translate-y-2 h-full flex flex-col">
       <h3 className="text-xl font-bold mb-2 text-base-content">{data.category}</h3>
       <p className="text-sm text-base-content opacity-70 mb-6 flex-grow">{data.description}</p>
 

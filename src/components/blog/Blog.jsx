@@ -96,7 +96,7 @@ const Blog = () => {
         breakpoints={custom_breakpoints}
         pagination={{ clickable: true }}
         modules={[Pagination]}
-        className="!pb-14"
+        className="!pb-14 !pt-4"
       >
         {skillsData?.map((data, index) => (
           <SwiperSlide
