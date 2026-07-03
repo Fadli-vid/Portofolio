@@ -1,4 +1,4 @@
-import Fadli2 from "../../assets/Fadli2.png";
+import Fadliv2 from "../../assets/Fadliv2.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import SocialMedia from "../common/socialMedia/SocialMedia";
@@ -16,8 +16,8 @@ const Profile = () => {
           <div className="max-w-106 h-117 object-fill overflow-hidden rounded-xl">
             <img
               // Ubah bg-soft-white menjadi bg-base-200
-              className="bg-base-200 h-[120%] object-cover transition-colors duration-300" 
-              src={Fadli2}
+              className="bg-base-200 h-[120%] object-cover transition-colors duration-300"
+              src={Fadliv2}
               alt=""
             />
           </div>
@@ -40,10 +40,10 @@ const Profile = () => {
           </h2>
           <div
             // Hapus text-gray-600, gunakan opacity agar di mode light/dark tetap serasi
-            className={`text-xs xs:text-[16px] lg:text-lg font-normal max-md:text-center opacity-80`} 
+            className={`text-xs xs:text-[16px] lg:text-lg font-normal max-md:text-center opacity-80`}
           >
             <p className={``}>
-              I am an Informatics student with a strong focus on web development and digital design, dedicated to creating modern, minimalistic, and user-friendly applications. I combine technical expertise with a creative approach to build seamless digital experiences that are both functional and visually appealing.<br></br><br></br>  
+              I am an Informatics student with a strong focus on web development and digital design, dedicated to creating modern, minimalistic, and user-friendly applications. I combine technical expertise with a creative approach to build seamless digital experiences that are both functional and visually appealing.<br></br><br></br>
 
               I am passionate about continuously learning and improving, striving to deliver carefully crafted solutions that enhance user comfort and interaction.
             </p>
