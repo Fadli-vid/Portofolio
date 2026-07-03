@@ -37,7 +37,10 @@ const Home = () => {
         <Profession />
       </div>
 
-      <HappyClients />
+      <div className="bg-base-200 shadow-md relative z-20 transition-colors duration-300">
+        <HappyClients />
+      </div>
+      
       <Contact />
     </div>
   );
