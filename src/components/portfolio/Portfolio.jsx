@@ -66,7 +66,7 @@ const projectData = [
 const Portfolio = () => {
   return (
     <div
-      className="content mt-10 md:mt-15 xl:mt-25 mb-10 md:mb-25 max-xxl:p-2 transition-colors duration-300"
+      className="content mt-10 md:mt-15 xl:mt-25 mb-10 md:mb-25 max-xxl:px-4 transition-colors duration-300"
       id="portfolio"
     >
       <div className="xl:mb-17.5 mb-5">

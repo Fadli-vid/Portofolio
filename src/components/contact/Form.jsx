@@ -49,12 +49,12 @@ const Form = () => {
             required
           />
 
-          <div className="flex max-xs:flex-col max-xs:gap-4">
+          <div className="flex max-md:flex-col md:gap-4">
             <input
               type="text"
               name="budget"
               placeholder="Budget*"
-              className={`${commonClass} xs:w-[50%] xs:me-5`}
+              className={`${commonClass} max-md:mb-4`}
               required
             />
             <input

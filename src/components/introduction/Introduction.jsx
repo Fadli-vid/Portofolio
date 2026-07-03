@@ -24,15 +24,15 @@ const informationSummaryData = [
 const Introduction = () => {
   return (
     <div
-      className="flex max-lg:flex-col-reverse sm:justify-between pt-10 lg:pt-31.5 lg:mb-27.5 max-xl:gap-2 p-2 max-xxl:px-4"
+      className="flex max-lg:flex-col-reverse sm:justify-between pt-10 lg:pt-31.5 lg:mb-27.5 gap-10 max-xl:gap-2 p-4 md:p-8 lg:p-2 max-xxl:px-4"
       id="introduction"
     >
       {/* Tambahkan text-base-content di container utama teks */}
       <div className="w-full flex flex-col justify-between max-lg:text-center text-base-content">
         <div className="pt-13 me-31.5 w-full lg:w-auto transition-all duration-500">
-          <p className="text-3xl xxs:text-4xl sm:max-xl:text-5xl xl:text-6xl font-semibold w-full">
+          <p className="text-3xl xxs:text-4xl sm:text-5xl xl:text-[64px] xl:leading-[1.1] font-semibold w-full">
             Hello, I’m
-            <span className="text-nowrap shrink-0 inline-block w-full">
+            <span className="block w-full mt-2 lg:mt-3">
               Fadli Santoso Murmita
             </span>
           </p>
@@ -42,7 +42,7 @@ const Introduction = () => {
           </p>
           <p className="text-center lg:text-start">
             <a
-              className="btn-primary btn btn-xs xxs:btn-lg text-white"
+              className="btn-primary btn min-w-[140px] xxs:btn-lg text-white"
               href="mailto:example@gmail.com"
             >
               Say Hello!
