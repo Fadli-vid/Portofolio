@@ -1,4 +1,4 @@
-import Fadli from "../../assets/Fadli.png";
+import Fadliv from "../../assets/Fadliv.png";
 import "./introduction.css";
 import InformationSummary from "./InformationSummary";
 
@@ -38,7 +38,7 @@ const Introduction = () => {
           </p>
           {/* Teks opacity-80 untuk menyelaraskan abu-abu dinamis */}
           <p className="text-xs xxs:text-lg lg:text-[18px] my-6 opacity-80">
-           I'm an Informatics student based in Depok, Indonesia, with a strong passion for <span className="bg-highlight">development</span> and <span className="bg-highlight">design</span>. I specialize in crafting web applications and digital experiences that are thoughtfully built, minimalistic, and user-focused—blending clean code with artistic creativity to deliver both functionality and aesthetic excellence.
+            I'm an Informatics student based in Depok, Indonesia, with a strong passion for <span className="bg-highlight">development</span> and <span className="bg-highlight">design</span>. I specialize in crafting web applications and digital experiences that are thoughtfully built, minimalistic, and user-focused—blending clean code with artistic creativity to deliver both functionality and aesthetic excellence.
           </p>
           <p className="text-center lg:text-start">
             <a
@@ -63,8 +63,8 @@ const Introduction = () => {
         <img
           // Hapus bg-white dan ganti dengan dinamis bg-base-200. Ganti shadow static ke dinamis.
           className={`shadow-2xl shadow-black/10 dark:shadow-white/5 w-full h-full absolute bottom-0 object-cover bg-base-200 rounded-3xl transition-colors duration-300`}
-          src={Fadli}
-          alt="Fadli"
+          src={Fadliv}
+          alt="Fadliv"
         />
       </div>
     </div>
