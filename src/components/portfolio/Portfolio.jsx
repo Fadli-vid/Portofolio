@@ -1,5 +1,5 @@
 import Projects from "./Projects";
-import card1 from "../../assets/images/portfolio-images/card-1.png";
+import dinopedia from "../../assets/images/portfolio-images/Dinopedia.png";
 import card2 from "../../assets/images/portfolio-images/card-2.png";
 import card3 from "../../assets/images/portfolio-images/card-3.png";
 import card4 from "../../assets/images/portfolio-images/card-4.png";
@@ -9,12 +9,12 @@ import card6 from "../../assets/images/portfolio-images/card-6.png";
 const projectData = [
   {
     id: 1,
-    image: card1,
-    category: "UI-UX DESIGN",
-    title: "Product Admin Dashboard",
+    image: dinopedia,
+    category: "Full Stack",
+    title: "Dinosaur Wiki",
     description:
       "I focus on crafting smooth, responsive interfaces that balance aesthetic appeal with practical functionality.",
-    link: "#!",
+    link: "https://dino-pedia.vercel.app/",
   },
   {
     id: 2,
@@ -23,7 +23,7 @@ const projectData = [
     title: "Product Admin Dashboard",
     description:
       "Designed an intuitive dashboard for product management, emphasizing clarity and user efficiency.",
-    link: "#!",
+    link: "https://teknojago.ct.ws/",
   },
   {
     id: 3,
@@ -32,7 +32,7 @@ const projectData = [
     title: "Product Admin Dashboard",
     description:
       "Developed a modern admin panel with a focus on usability and seamless navigation for end users and so on.",
-    link: "#!",
+    link: "https://teknojago2.ct.ws/login/login_user.php",
   },
   {
     id: 4,
