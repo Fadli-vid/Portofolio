@@ -1,7 +1,7 @@
 import Projects from "./Projects";
 import dinopedia from "../../assets/images/portfolio-images/Dinopedia.png";
 import skincare from "../../assets/images/portfolio-images/Basic_skincare_analyzer.png";
-import card3 from "../../assets/images/portfolio-images/card-3.png";
+import technichian from "../../assets/images/portfolio-images/Technichian.png";
 import card4 from "../../assets/images/portfolio-images/card-4.png";
 import card5 from "../../assets/images/portfolio-images/card-5.png";
 import card6 from "../../assets/images/portfolio-images/card-6.png";
@@ -10,7 +10,7 @@ const projectData = [
   {
     id: 1,
     image: dinopedia,
-    category: "Full Stack Web",
+    category: "Full Stack Web Using Next.js",
     title: "Dinosaur Wiki",
     description:
       "I focus on crafting smooth, responsive interfaces that balance aesthetic appeal with practical functionality.",
@@ -19,7 +19,7 @@ const projectData = [
   {
     id: 2,
     image: skincare,
-    category: "Full Stack Web",
+    category: "Full Stack Web Using Next.js",
     title: "Basic Skincare Ingredient Analyzer",
     description:
       "Designed an intuitive dashboard for product management, emphasizing clarity and user efficiency.",
@@ -27,12 +27,12 @@ const projectData = [
   },
   {
     id: 3,
-    image: card3,
-    category: "UI-UX DESIGN",
-    title: "Product Admin Dashboard",
+    image: technichian,
+    category: "Full Stack Web, PHP, Code Igniter",
+    title: "On-Demand Home Electronics Repair Service",
     description:
       "Developed a modern admin panel with a focus on usability and seamless navigation for end users and so on.",
-    link: "https://teknojago2.ct.ws/login/login_user.php",
+    link: "teknojago.ct.ws",
   },
   {
     id: 4,
