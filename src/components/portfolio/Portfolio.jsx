@@ -2,7 +2,7 @@ import Projects from "./Projects";
 import dinopedia from "../../assets/images/portfolio-images/Dinopedia.png";
 import skincare from "../../assets/images/portfolio-images/Basic_skincare_analyzer.png";
 import technichian from "../../assets/images/portfolio-images/Technichian.png";
-import card4 from "../../assets/images/portfolio-images/card-4.png";
+import computer from "../../assets/images/portfolio-images/Computer.png";
 import card5 from "../../assets/images/portfolio-images/card-5.png";
 import card6 from "../../assets/images/portfolio-images/card-6.png";
 
@@ -10,7 +10,7 @@ const projectData = [
   {
     id: 1,
     image: dinopedia,
-    category: "Full Stack Web Using Next.js",
+    category: "Full Stack Web, JavaScript, Next.js, Tailwind CSS",
     title: "Dinosaur Wiki",
     description:
       "I focus on crafting smooth, responsive interfaces that balance aesthetic appeal with practical functionality.",
@@ -19,7 +19,7 @@ const projectData = [
   {
     id: 2,
     image: skincare,
-    category: "Full Stack Web Using Next.js",
+    category: "Full Stack Web, JavaScript, Next.js",
     title: "Basic Skincare Ingredient Analyzer",
     description:
       "Designed an intuitive dashboard for product management, emphasizing clarity and user efficiency.",
@@ -36,12 +36,12 @@ const projectData = [
   },
   {
     id: 4,
-    image: card4,
-    category: "UI-UX DESIGN",
-    title: "Product Admin Dashboard",
+    image: computer,
+    category: "Full Stack Web, PHP, Bootstrap",
+    title: "Computer & Laptop Repair Booking System",
     description:
       "Created a responsive dashboard layout that adapts smoothly across devices and screen sizes and so on.",
-    link: "#!",
+    link: "teknojago2.ct.ws",
   },
   {
     id: 5,
