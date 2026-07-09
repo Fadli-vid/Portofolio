@@ -1,6 +1,6 @@
 import Projects from "./Projects";
 import dinopedia from "../../assets/images/portfolio-images/Dinopedia.png";
-import card2 from "../../assets/images/portfolio-images/card-2.png";
+import skincare from "../../assets/images/portfolio-images/Basic_skincare_analyzer.png";
 import card3 from "../../assets/images/portfolio-images/card-3.png";
 import card4 from "../../assets/images/portfolio-images/card-4.png";
 import card5 from "../../assets/images/portfolio-images/card-5.png";
@@ -10,7 +10,7 @@ const projectData = [
   {
     id: 1,
     image: dinopedia,
-    category: "Full Stack",
+    category: "Full Stack Web",
     title: "Dinosaur Wiki",
     description:
       "I focus on crafting smooth, responsive interfaces that balance aesthetic appeal with practical functionality.",
@@ -18,12 +18,12 @@ const projectData = [
   },
   {
     id: 2,
-    image: card2,
-    category: "UI-UX DESIGN",
-    title: "Product Admin Dashboard",
+    image: skincare,
+    category: "Full Stack Web",
+    title: "Basic Skincare Ingredient Analyzer",
     description:
       "Designed an intuitive dashboard for product management, emphasizing clarity and user efficiency.",
-    link: "https://teknojago.ct.ws/",
+    link: "https://basic-skincare-ingredient-analyzier.vercel.app/",
   },
   {
     id: 3,
