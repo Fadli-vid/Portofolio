@@ -46,11 +46,11 @@ const projectData = [
   {
     id: 5,
     image: card5,
-    category: "UI-UX DESIGN",
-    title: "Product Admin Dashboard",
+    category: "APK, Flutter, Dart",
+    title: "School Schedule",
     description:
       "Implemented interactive charts and widgets to visualize product data effectively for stakeholders.",
-    link: "#!",
+    link: "https://github.com/Fadli-vid/School-Schedule/releases/tag/1.0.0",
   },
   {
     id: 6,
