@@ -40,7 +40,7 @@ const projectData = [
     category: "Full Stack Web, PHP, Bootstrap",
     title: "Computer & Laptop Repair Booking System",
     description:
-      "Created a responsive dashboard layout that adapts smoothly across devices and screen sizes and so on.",
+      "An on-demand computer and laptop repair booking web platform featuring a multi-role system for customers, admins, and technicians. Designed for effortless service requests by users, robust admin monitoring and management, and streamlined task tracking for technicians.",
     link: "teknojago2.ct.ws",
   },
   {
