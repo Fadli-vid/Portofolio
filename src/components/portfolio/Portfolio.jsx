@@ -13,7 +13,7 @@ const projectData = [
     category: "Full Stack Web, JavaScript, Next.js, Tailwind CSS",
     title: "Dinosaur Wiki",
     description:
-      "I focus on crafting smooth, responsive interfaces that balance aesthetic appeal with practical functionality.",
+      "Dinopedia is an encyclopedia-style web platform for science and prehistoric knowledge exploring various dinosaur species. Designed with a modern UI, research-backed and accurate information, and relevant interactive features.",
     link: "https://dino-pedia.vercel.app/",
   },
   {
