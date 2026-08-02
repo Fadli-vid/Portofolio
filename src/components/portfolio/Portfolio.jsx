@@ -3,7 +3,7 @@ import dinopedia from "../../assets/images/portfolio-images/Dinopedia.png";
 import skincare from "../../assets/images/portfolio-images/Basic_skincare_analyzer.png";
 import technichian from "../../assets/images/portfolio-images/Technichian.png";
 import computer from "../../assets/images/portfolio-images/Computer.png";
-import card5 from "../../assets/images/portfolio-images/card-5.png";
+import schedule from "../../assets/images/portfolio-images/jadwal kuliah.jpg";
 import card6 from "../../assets/images/portfolio-images/card-6.png";
 
 const projectData = [
@@ -45,11 +45,11 @@ const projectData = [
   },
   {
     id: 5,
-    image: card5,
+    image: schedule,
     category: "APK, Flutter, Dart",
     title: "School Schedule",
     description:
-      "Implemented interactive charts and widgets to visualize product data effectively for stakeholders.",
+      "My first mobile application project, a course planner app built to help students manage schedules. Features include tracking course names, class days, credit hours (SKS), room numbers, lecturer names, and other smart management tools.",
     link: "https://github.com/Fadli-vid/School-Schedule/releases/tag/1.0.0",
   },
   {
