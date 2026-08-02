@@ -3,7 +3,7 @@ import dinopedia from "../../assets/images/portfolio-images/Dinopedia.png";
 import skincare from "../../assets/images/portfolio-images/Basic_skincare_analyzer.png";
 import technichian from "../../assets/images/portfolio-images/Technichian.png";
 import computer from "../../assets/images/portfolio-images/Computer.png";
-import schedule from "../../assets/images/portfolio-images/jadwal kuliah.jpg";
+import schedule from "../../assets/images/portfolio-images/Jadwal Kuliah.jpg";
 import card6 from "../../assets/images/portfolio-images/card-6.png";
 
 const projectData = [
