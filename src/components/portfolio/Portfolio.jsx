@@ -55,11 +55,11 @@ const projectData = [
   {
     id: 6,
     image: card6,
-    category: "UI-UX DESIGN",
-    title: "Product Admin Dashboard",
+    category: "Landing Page, Vite, TypeScript, SEO, Figma",
+    title: "Sanyonara Service - AC & Electronics Repair",
     description:
-      "Enhanced user experience by streamlining workflows and optimizing interface components and so on.",
-    link: "#!",
+      "A client project for Sanyonara Service (MSME/UMKM). Built an informative landing page and information system showcasing services, pricing, about us, contact, and location details, optimized for SEO and indexed on Google Search.",
+    link: "https://www.sanyonaraservice.web.id/",
   },
 ];
 
