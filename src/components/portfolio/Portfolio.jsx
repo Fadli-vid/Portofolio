@@ -31,7 +31,7 @@ const projectData = [
     category: "Full Stack Web, PHP, Code Igniter",
     title: "On-Demand Home Electronics Repair Service",
     description:
-      "Developed a modern admin panel with a focus on usability and seamless navigation for end users and so on.",
+      "An on-demand service booking web platform featuring a multi-role system for customers, admins, and technicians. Focused on seamless user booking experience, comprehensive admin monitoring and management, and job tracking tools for technicians.",
     link: "teknojago.ct.ws",
   },
   {
