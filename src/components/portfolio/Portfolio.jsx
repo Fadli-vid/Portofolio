@@ -22,7 +22,7 @@ const projectData = [
     category: "Full Stack Web, JavaScript, Next.js",
     title: "Basic Skincare Ingredient Analyzer",
     description:
-      "Designed an intuitive dashboard for product management, emphasizing clarity and user efficiency.",
+      "A web platform focused on analyzing skincare ingredient compatibility and safety tailored to individual skin profiles. Technically designed for ease of use, leveraging AI technology, detailed information, and smart recommendations.",
     link: "https://basic-skincare-ingredient-analyzier.vercel.app/",
   },
   {
