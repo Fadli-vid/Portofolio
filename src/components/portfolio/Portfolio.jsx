@@ -4,7 +4,7 @@ import skincare from "../../assets/images/portfolio-images/Basic_skincare_analyz
 import technichian from "../../assets/images/portfolio-images/Technichian.png";
 import computer from "../../assets/images/portfolio-images/Computer.png";
 import schedule from "../../assets/images/portfolio-images/Jadwal Kuliah.jpg";
-import card6 from "../../assets/images/portfolio-images/card-6.png";
+import sanyo from "../../assets/images/portfolio-images/sanyonaraservice.png";
 
 const projectData = [
   {
@@ -27,12 +27,12 @@ const projectData = [
   },
   {
     id: 3,
-    image: technichian,
-    category: "Full Stack Web, PHP, Code Igniter",
-    title: "On-Demand Home Electronics Repair Service",
+    image: sanyo,
+    category: "Landing Page, Vite, TypeScript, SEO, Figma",
+    title: "Sanyonara Service - AC & Electronics Repair",
     description:
-      "An on-demand service booking web platform featuring a multi-role system for customers, admins, and technicians. Focused on seamless user booking experience, comprehensive admin monitoring and management, and job tracking tools for technicians.",
-    link: "http://teknojago.ct.ws",
+      "A client project for Sanyonara Service (MSME/UMKM). Built an informative landing page and information system showcasing services, pricing, about us, contact, and location details, optimized for SEO and indexed on Google Search.",
+    link: "https://www.sanyonaraservice.web.id/",
   },
   {
     id: 4,
@@ -54,12 +54,12 @@ const projectData = [
   },
   {
     id: 6,
-    image: card6,
-    category: "Landing Page, Vite, TypeScript, SEO, Figma",
-    title: "Sanyonara Service - AC & Electronics Repair",
+    image: technichian,
+    category: "Full Stack Web, PHP, Code Igniter",
+    title: "On-Demand Home Electronics Repair Service",
     description:
-      "A client project for Sanyonara Service (MSME/UMKM). Built an informative landing page and information system showcasing services, pricing, about us, contact, and location details, optimized for SEO and indexed on Google Search.",
-    link: "https://www.sanyonaraservice.web.id/",
+      "An on-demand service booking web platform featuring a multi-role system for customers, admins, and technicians. Focused on seamless user booking experience, comprehensive admin monitoring and management, and job tracking tools for technicians.",
+    link: "http://teknojago.ct.ws",
   },
 ];
 
