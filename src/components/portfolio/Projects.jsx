@@ -27,6 +27,8 @@ const Projects = ({ data }) => {
         
         <a
           href={data?.link}
+          target="_blank"
+          rel="noreferrer"
           // Ubah bg-white menjadi bg-base-100 dan tambahkan border agar tombol tidak terlihat menyatu dengan background
           className="btn hover:border-picto-primary hover:text-picto-primary bg-base-100 text-base-content border border-base-content/20 text-sm xs:text-[16px] font-semibold hover:gap-3 xs:hover:gap-4 transition-all duration-300 mt-5 xs:py-5.75 px-6 max-sm:w-full"
         >

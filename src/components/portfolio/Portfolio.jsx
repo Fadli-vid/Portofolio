@@ -32,7 +32,7 @@ const projectData = [
     title: "On-Demand Home Electronics Repair Service",
     description:
       "An on-demand service booking web platform featuring a multi-role system for customers, admins, and technicians. Focused on seamless user booking experience, comprehensive admin monitoring and management, and job tracking tools for technicians.",
-    link: "teknojago.ct.ws",
+    link: "http://teknojago.ct.ws",
   },
   {
     id: 4,
@@ -41,7 +41,7 @@ const projectData = [
     title: "Computer & Laptop Repair Booking System",
     description:
       "An on-demand computer and laptop repair booking web platform featuring a multi-role system for customers, admins, and technicians. Designed for effortless service requests by users, robust admin monitoring and management, and streamlined task tracking for technicians.",
-    link: "teknojago2.ct.ws",
+    link: "http://teknojago2.ct.ws",
   },
   {
     id: 5,
