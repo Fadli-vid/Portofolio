@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Projects from "./Projects";
 import dinopedia from "../../assets/images/portfolio-images/Dinopedia.png";
 import skincare from "../../assets/images/portfolio-images/Basic_skincare_analyzer.png";
@@ -5,7 +6,7 @@ import technichian from "../../assets/images/portfolio-images/Technichian.png";
 import computer from "../../assets/images/portfolio-images/Computer.png";
 import schedule from "../../assets/images/portfolio-images/Jadwal Kuliah.jpg";
 import sanyo from "../../assets/images/portfolio-images/sanyonaraservice.png";
-import card3 from "../../assets/images/portfolio-images/card-3.png";
+import akalaundry from "../../assets/images/portfolio-images/Akalaundry.png";
 
 const projectData = [
   {
@@ -64,7 +65,7 @@ const projectData = [
   },
   {
     id: 7,
-    image: card3,
+    image: akalaundry,
     category: "Full Stack Web, PHP, CodeIgniter 4, Bootstrap",
     title: "AKA Laundry - Order Tracking & Management System",
     description:
@@ -74,6 +75,9 @@ const projectData = [
 ];
 
 const Portfolio = () => {
+  const [showAll, setShowAll] = useState(false);
+  const visibleProjects = showAll ? projectData : projectData.slice(0, 6);
+
   return (
     <div
       className="content mt-10 md:mt-15 xl:mt-25 mb-10 md:mb-25 max-xxl:px-4 transition-colors duration-300"
@@ -90,19 +94,21 @@ const Portfolio = () => {
       </div>
       <div className="mx-auto flex justify-center">
         <div className="grid xl:grid-cols-3 md:grid-cols-2 gap-6">
-          {projectData.map((data, index) => (
+          {visibleProjects.map((data, index) => (
             <Projects data={data} key={index} />
           ))}
         </div>
       </div>
-      <div className="text-center">
-        <a
-          href="#!"
-          className="btn btn-primary py-3 px-6 mt-12.5 text-center text-[16px] font-semibold"
-        >
-          More Project
-        </a>
-      </div>
+      {projectData.length > 6 && (
+        <div className="text-center">
+          <button
+            onClick={() => setShowAll(!showAll)}
+            className="btn btn-primary py-3 px-6 mt-12.5 text-center text-[16px] font-semibold cursor-pointer"
+          >
+            {showAll ? "Show Less" : "More Project"}
+          </button>
+        </div>
+      )}
     </div>
   );
 };
