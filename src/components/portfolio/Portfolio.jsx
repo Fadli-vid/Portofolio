@@ -152,17 +152,16 @@ const Portfolio = () => {
               className="rounded-xl bg-base-100 p-6 md:p-8 border border-base-content/10 shadow-md shadow-black/5 dark:shadow-white/5 hover:shadow-xl transition-all duration-300 flex flex-col justify-between group"
             >
               <div>
-                <div className="flex items-center justify-end mb-4">
-                  <div className="w-10 h-10 rounded-full bg-base-200 flex items-center justify-center text-picto-primary">
+                <div className="flex items-center justify-between gap-3 mb-2">
+                  <div className="flex items-center gap-2">
+                    <FontAwesomeIcon icon={faInstagram} className="text-xl text-pink-500" />
+                    <h4 className="text-xl font-bold text-base-content group-hover:text-picto-primary transition-colors">
+                      {item.title}
+                    </h4>
+                  </div>
+                  <div className="w-10 h-10 rounded-full bg-base-200 flex items-center justify-center text-picto-primary shrink-0">
                     <FontAwesomeIcon icon={item.icon} className="text-lg" />
                   </div>
-                </div>
-
-                <div className="flex items-center gap-2 mb-2">
-                  <FontAwesomeIcon icon={faInstagram} className="text-xl text-pink-500" />
-                  <h4 className="text-xl font-bold text-base-content group-hover:text-picto-primary transition-colors">
-                    {item.title}
-                  </h4>
                 </div>
                 <p className="text-xs font-semibold text-picto-primary mb-3">{item.handle}</p>
 
