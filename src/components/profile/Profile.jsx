@@ -58,7 +58,7 @@ const Profile = () => {
             <a
               // Ubah bg-white menjadi bg-base-100, tambahkan border agar terlihat sbg outline
               className={`btn min-w-[140px] px-6 py-3 border border-base-content/20 hover:border-picto-primary bg-base-100 text-base-content duration-300 transition-all hover:text-picto-primary ms-4 text-[14px] sm:text-[16px]`}
-              href="https://drive.google.com/drive/folders/1zDQ2pWP1ZlTinak6-pxAE776ksJjj3Aw?usp=sharing"
+              href="https://drive.google.com/file/d/1MElhivJMwIpL3gv6DVzU-52AHG4IN8V4/view?usp=sharing"
             >
               <FontAwesomeIcon icon={faDownload} /> Download CV
             </a>
