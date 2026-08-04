@@ -20,7 +20,6 @@ const sidePortfolios = [
       "A creative showcase of my 3D design and modeling work crafted as part of my passion for 3D art and visual asset design.",
     link: "https://www.instagram.com/fafa_3d?igsh=Z291dWJvbmQ1MXBj",
     icon: faCube,
-    badgeColor: "bg-purple-500/10 text-purple-600 dark:text-purple-400 border-purple-500/20",
   },
   {
     id: 2,
@@ -30,7 +29,6 @@ const sidePortfolios = [
       "A dedicated gallery of retro-inspired pixel art creations and digital illustrations developed through my creative design hobbies.",
     link: "https://www.instagram.com/faxel.art?igsh=dmF0ZXM2bHg0a2F6",
     icon: faPalette,
-    badgeColor: "bg-amber-500/10 text-amber-600 dark:text-amber-400 border-amber-500/20",
   },
 ];
 
@@ -154,10 +152,7 @@ const Portfolio = () => {
               className="rounded-xl bg-base-100 p-6 md:p-8 border border-base-content/10 shadow-md shadow-black/5 dark:shadow-white/5 hover:shadow-xl transition-all duration-300 flex flex-col justify-between group"
             >
               <div>
-                <div className="flex items-center justify-between mb-4">
-                  <span className={`text-xs font-semibold px-3 py-1 rounded-full border ${item.badgeColor}`}>
-                    {item.category}
-                  </span>
+                <div className="flex items-center justify-end mb-4">
                   <div className="w-10 h-10 rounded-full bg-base-200 flex items-center justify-center text-picto-primary">
                     <FontAwesomeIcon icon={item.icon} className="text-lg" />
                   </div>
