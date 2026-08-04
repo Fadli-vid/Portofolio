@@ -5,6 +5,7 @@ import technichian from "../../assets/images/portfolio-images/Technichian.png";
 import computer from "../../assets/images/portfolio-images/Computer.png";
 import schedule from "../../assets/images/portfolio-images/Jadwal Kuliah.jpg";
 import sanyo from "../../assets/images/portfolio-images/sanyonaraservice.png";
+import card3 from "../../assets/images/portfolio-images/card-3.png";
 
 const projectData = [
   {
@@ -60,6 +61,15 @@ const projectData = [
     description:
       "An on-demand service booking web platform featuring a multi-role system for customers, admins, and technicians. Focused on seamless user booking experience, comprehensive admin monitoring and management, and job tracking tools for technicians.",
     link: "http://teknojago.ct.ws",
+  },
+  {
+    id: 7,
+    image: card3,
+    category: "Full Stack Web, PHP, CodeIgniter 4, Bootstrap",
+    title: "AKA Laundry - Order Tracking & Management System",
+    description:
+      "A laundry order monitoring and tracking system for AKA Laundry with a 3-role ecosystem: admins managing overall operations, washers updating real-time washing status, and customers viewing pricing, company info, and tracking their laundry order progress.",
+    link: "https://laundrykuporject.great-site.net/",
   },
 ];
 
