@@ -7,6 +7,34 @@ import computer from "../../assets/images/portfolio-images/Computer.png";
 import schedule from "../../assets/images/portfolio-images/Jadwal Kuliah.jpg";
 import sanyo from "../../assets/images/portfolio-images/sanyonaraservice.png";
 import akalaundry from "../../assets/images/portfolio-images/Akalaundry.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faCube, faPalette, faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+
+const sidePortfolios = [
+  {
+    id: 1,
+    title: "3D Design Portfolio",
+    handle: "@fafa_3d",
+    category: "Side Portfolio / Hobby",
+    description:
+      "A creative showcase of my 3D design and modeling work crafted as part of my passion for 3D art and visual asset design.",
+    link: "https://www.instagram.com/fafa_3d?igsh=Z291dWJvbmQ1MXBj",
+    icon: faCube,
+    badgeColor: "bg-purple-500/10 text-purple-600 dark:text-purple-400 border-purple-500/20",
+  },
+  {
+    id: 2,
+    title: "Pixel Art Portfolio",
+    handle: "@faxel.art",
+    category: "Side Portfolio / Hobby",
+    description:
+      "A dedicated gallery of retro-inspired pixel art creations and digital illustrations developed through my creative design hobbies.",
+    link: "https://www.instagram.com/faxel.art?igsh=dmF0ZXM2bHg0a2F6",
+    icon: faPalette,
+    badgeColor: "bg-amber-500/10 text-amber-600 dark:text-amber-400 border-amber-500/20",
+  },
+];
 
 const projectData = [
   {
@@ -100,7 +128,7 @@ const Portfolio = () => {
         </div>
       </div>
       {projectData.length > 6 && (
-        <div className="text-center">
+        <div className="text-center mb-16">
           <button
             onClick={() => setShowAll(!showAll)}
             className="btn btn-primary py-3 px-6 mt-12.5 text-center text-[16px] font-semibold cursor-pointer"
@@ -109,6 +137,60 @@ const Portfolio = () => {
           </button>
         </div>
       )}
+
+      {/* Side Portfolio Section */}
+      <div className="mt-20 pt-10 border-t border-base-content/10">
+        <div className="text-center max-w-144.25 mx-auto mb-10">
+          <h3 className="text-2xl md:text-3xl font-bold text-base-content">
+            Side Portfolios & Creative Hobbies
+          </h3>
+          <p className="font-normal text-sm md:text-base pt-3 opacity-70 text-base-content">
+            Explore my digital art, 3D designs, and visual creations crafted on Instagram.
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          {sidePortfolios.map((item) => (
+            <div
+              key={item.id}
+              className="rounded-xl bg-base-100 p-6 md:p-8 border border-base-content/10 shadow-md shadow-black/5 dark:shadow-white/5 hover:shadow-xl transition-all duration-300 flex flex-col justify-between group"
+            >
+              <div>
+                <div className="flex items-center justify-between mb-4">
+                  <span className={`text-xs font-semibold px-3 py-1 rounded-full border ${item.badgeColor}`}>
+                    {item.category}
+                  </span>
+                  <div className="w-10 h-10 rounded-full bg-base-200 flex items-center justify-center text-picto-primary">
+                    <FontAwesomeIcon icon={item.icon} className="text-lg" />
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-2 mb-2">
+                  <FontAwesomeIcon icon={faInstagram} className="text-xl text-pink-500" />
+                  <h4 className="text-xl font-bold text-base-content group-hover:text-picto-primary transition-colors">
+                    {item.title}
+                  </h4>
+                </div>
+                <p className="text-xs font-semibold text-picto-primary mb-3">{item.handle}</p>
+
+                <p className="opacity-80 text-base-content text-xs xxs:text-[14px] leading-relaxed mb-6">
+                  {item.description}
+                </p>
+              </div>
+
+              <a
+                href={item.link}
+                target="_blank"
+                rel="noreferrer"
+                className="btn hover:border-picto-primary hover:text-picto-primary bg-base-100 text-base-content border border-base-content/20 text-sm font-semibold hover:gap-3 transition-all duration-300 w-full flex items-center justify-center gap-2"
+              >
+                Visit Instagram
+                <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="text-xs" />
+              </a>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 };
