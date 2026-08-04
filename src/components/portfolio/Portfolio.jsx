@@ -16,7 +16,6 @@ const sidePortfolios = [
     id: 1,
     title: "3D Design Portfolio",
     handle: "@fafa_3d",
-    category: "Side Portfolio / Hobby",
     description:
       "A creative showcase of my 3D design and modeling work crafted as part of my passion for 3D art and visual asset design.",
     link: "https://www.instagram.com/fafa_3d?igsh=Z291dWJvbmQ1MXBj",
@@ -27,7 +26,6 @@ const sidePortfolios = [
     id: 2,
     title: "Pixel Art Portfolio",
     handle: "@faxel.art",
-    category: "Side Portfolio / Hobby",
     description:
       "A dedicated gallery of retro-inspired pixel art creations and digital illustrations developed through my creative design hobbies.",
     link: "https://www.instagram.com/faxel.art?igsh=dmF0ZXM2bHg0a2F6",
