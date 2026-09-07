@@ -39,6 +39,7 @@ import {
 
 // Certificate Assets:
 import pcapCert from "../../assets/images/certificate/PCAP.jpg";
+import pklCert from "../../assets/images/certificate/PKL.png";
 import sampleCertWeb from "../../assets/images/certificate/sample-cert-web.svg";
 import sampleCertCloud from "../../assets/images/certificate/sample-cert-cloud.svg";
 import sampleCertUiux from "../../assets/images/certificate/sample-cert-uiux.svg";
@@ -64,6 +65,23 @@ const certificatesData = [
   },
   {
     id: 2,
+    title: "Vocational Internship (PKL) - Printing Operations & Graphic Design",
+    issuer: "SMK Taruna Terpadu 1 (Borcess) & Cahaya Makmur Printing",
+    date: "18 Dec 2020",
+    category: "Multimedia & Design",
+    image: pklCert,
+    skills: [
+      "Printing Press Operations",
+      "Digital & Offset Print Design",
+      "Pre-Press & Layouting",
+      "Multimedia Production",
+      "Quality Control & Finishing",
+    ],
+    description:
+      "Vocational Internship Certificate (Praktek Kerja Lapangan - PKL) awarded with Grade 'A (Sangat Baik / Excellent)' distinction by SMK Taruna Terpadu 1 (Borcess) in collaboration with Cahaya Makmur Printing. Demonstrated high competency in operating commercial printing machinery, preparing pre-press production layouts, executing digital and offset printing tasks, and managing post-print finishing and quality control in the Multimedia competency division.",
+  },
+  {
+    id: 3,
     title: "Full Stack React & Next.js Specialist",
     issuer: "Modern Web Academy",
     date: "2024",
@@ -74,7 +92,7 @@ const certificatesData = [
       "Certification mastering the modern React ecosystem and Next.js App Router, covering Server-Side Rendering (SSR), Static Site Generation (SSG), RESTful API integration, and interactive component architecture.",
   },
   {
-    id: 3,
+    id: 4,
     title: "Cloud & DevOps Fundamentals",
     issuer: "Cloud Academy International",
     date: "2024",
@@ -85,7 +103,7 @@ const certificatesData = [
       "Comprehensive training and credential in containerization with Docker, automated Continuous Integration and Continuous Deployment (CI/CD) pipelines, Linux server administration, and scalable cloud deployments.",
   },
   {
-    id: 4,
+    id: 5,
     title: "Professional UI/UX & Frontend Architecture",
     issuer: "Creative Design Institute",
     date: "2024",
@@ -96,7 +114,7 @@ const certificatesData = [
       "Professional accreditation in user research, intuitive user experience design, interactive wireframing, high-fidelity prototyping, and scalable, accessible design systems in Figma.",
   },
   {
-    id: 5,
+    id: 6,
     title: "Web Security & OWASP Standards",
     issuer: "Cyber Defense Authority",
     date: "2024",
