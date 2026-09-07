@@ -7,6 +7,7 @@ import computer from "../../assets/images/portfolio-images/Computer.png";
 import schedule from "../../assets/images/portfolio-images/Jadwal Kuliah.jpg";
 import sanyo from "../../assets/images/portfolio-images/sanyonaraservice.png";
 import akalaundry from "../../assets/images/portfolio-images/Akalaundry.png";
+import payrollsys from "../../assets/images/portfolio-images/payrollsys.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faCube, faPalette, faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
@@ -95,6 +96,15 @@ const projectData = [
     description:
       "A laundry order monitoring and tracking system for AKA Laundry with a 3-role ecosystem: admins managing overall operations, washers updating real-time washing status, and customers viewing pricing, company info, and tracking their laundry order progress.",
     link: "https://laundrykuporject.great-site.net/",
+  },
+  {
+    id: 8,
+    image: payrollsys,
+    category: "Full Stack Web, JavaScript, Next.js",
+    title: "PayrollSys — Employee Payroll Management System",
+    description:
+      "Originally developed for BNSP Certification, PayrollSys is a modern employee payroll management system. It features automated salary recap calculations, employee loan/cash advance (Kasbon) tracking, attendance management, and division-based allowance categorization.",
+    link: "https://payrollsys-taupe.vercel.app/login?from=%2F",
   },
 ];
 

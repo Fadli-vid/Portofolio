@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="50%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#6366f1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="560" rx="16" fill="url(#bgGrad)" />
+  
+  <!-- Outer Decorative Border -->
+  <rect x="24" y="24" width="752" height="512" rx="12" fill="none" stroke="url(#goldGrad)" stroke-width="3" stroke-dasharray="8 4" opacity="0.6" />
+  <rect x="36" y="36" width="728" height="488" rx="8" fill="none" stroke="#ffffff" stroke-opacity="0.1" stroke-width="1.5" />
+  
+  <!-- Corner Ornaments -->
+  <path d="M 44 70 L 44 44 L 70 44" fill="none" stroke="url(#goldGrad)" stroke-width="3" />
+  <path d="M 756 70 L 756 44 L 730 44" fill="none" stroke="url(#goldGrad)" stroke-width="3" />
+  <path d="M 44 490 L 44 516 L 70 516" fill="none" stroke="url(#goldGrad)" stroke-width="3" />
+  <path d="M 756 490 L 756 516 L 730 516" fill="none" stroke="url(#goldGrad)" stroke-width="3" />
+
+  <!-- Badge / Emblem -->
+  <circle cx="400" cy="115" r="38" fill="url(#goldGrad)" opacity="0.15" />
+  <circle cx="400" cy="115" r="30" fill="none" stroke="url(#goldGrad)" stroke-width="2" />
+  <path d="M 400 95 L 406 109 L 420 110 L 409 120 L 413 134 L 400 126 L 387 134 L 391 120 L 380 110 L 394 109 Z" fill="url(#goldGrad)" />
+  
+  <!-- Header Text -->
+  <text x="400" y="185" text-anchor="middle" font-family="'Inter', sans-serif" font-size="14" font-weight="700" letter-spacing="4" fill="#fbbf24">SERTIFIKAT KOMPETENSI NASIONAL</text>
+  <text x="400" y="215" text-anchor="middle" font-family="'Inter', sans-serif" font-size="12" letter-spacing="2" fill="#94a3b8">BADAN NASIONAL SERTIFIKASI PROFESI (BNSP)</text>
+  
+  <!-- Certificate Title -->
+  <text x="400" y="275" text-anchor="middle" font-family="'Inter', sans-serif" font-size="28" font-weight="800" fill="#ffffff">Junior Web Developer</text>
+  <line x1="260" y1="295" x2="540" y2="295" stroke="url(#goldGrad)" stroke-width="2" />
+  
+  <!-- Recipient / Info -->
+  <text x="400" y="335" text-anchor="middle" font-family="'Inter', sans-serif" font-size="14" fill="#cbd5e1">Diberikan sebagai bukti kompetensi kelulusan uji keahlian profesi</text>
+  <text x="400" y="360" text-anchor="middle" font-family="'Inter', sans-serif" font-size="13" fill="#94a3b8">Bidang Teknologi Informasi &amp; Komunikasi (TIK)</text>
+
+  <!-- Competency Units Badge -->
+  <rect x="230" y="390" width="340" height="34" rx="17" fill="#ffffff" fill-opacity="0.06" stroke="#ffffff" stroke-opacity="0.1" />
+  <text x="400" y="412" text-anchor="middle" font-family="'Inter', sans-serif" font-size="12" font-weight="500" fill="#38bdf8">Kualifikasi: Pemrograman Web &amp; RESTful API</text>
+
+  <!-- Bottom Details -->
+  <text x="120" y="475" font-family="'Inter', sans-serif" font-size="11" fill="#64748b">No. Reg: BNSP-TIK-2024-0891</text>
+  <text x="120" y="495" font-family="'Inter', sans-serif" font-size="11" fill="#64748b">Status: Terverifikasi Nasional</text>
+
+  <circle cx="670" cy="465" r="28" fill="url(#goldGrad)" opacity="0.2" />
+  <circle cx="670" cy="465" r="24" fill="none" stroke="url(#goldGrad)" stroke-width="1.5" stroke-dasharray="4 2" />
+  <text x="670" y="469" text-anchor="middle" font-family="'Inter', sans-serif" font-size="9" font-weight="700" fill="#fbbf24">VALIDATED</text>
+</svg>

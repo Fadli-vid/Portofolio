@@ -1,0 +1,40 @@
+/* Swiper styling for Certificates Section */
+.cert-swiper .swiper-pagination {
+  position: relative !important;
+  margin-top: 1.5rem !important;
+  bottom: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 0.5rem !important;
+}
+
+/* Bullet Inaktif - Sangat terlihat dengan outline ungu & background jelas */
+.cert-swiper .swiper-pagination-bullet {
+  background-color: rgba(153, 41, 251, 0.25) !important;
+  border: 2px solid rgba(153, 41, 251, 0.6) !important;
+  opacity: 0.8 !important;
+  width: 14px !important;
+  height: 14px !important;
+  margin: 0 !important;
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  cursor: pointer !important;
+}
+
+.cert-swiper .swiper-pagination-bullet:hover {
+  opacity: 1 !important;
+  transform: scale(1.25) !important;
+  border-color: #9929fb !important;
+  background-color: rgba(153, 41, 251, 0.45) !important;
+}
+
+/* Bullet Aktif - Memanjang dengan bayangan cerah */
+.cert-swiper .swiper-pagination-bullet-active {
+  background-color: #9929fb !important;
+  border-color: #9929fb !important;
+  opacity: 1 !important;
+  width: 38px !important;
+  height: 14px !important;
+  border-radius: 9999px !important;
+  box-shadow: 0 4px 14px rgba(153, 41, 251, 0.5) !important;
+}

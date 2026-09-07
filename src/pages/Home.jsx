@@ -5,7 +5,7 @@ import Portfolio from "../components/portfolio/Portfolio";
 import WorkTogether from "../components/workTogether/WorkTogether";
 import Blog from "../components/blog/Blog";
 import Profession from "../components/profession/Profession";
-import HappyClients from "../components/happyClients/HappyClients";
+import Certificates from "../components/certificates/Certificates";
 import Contact from "../components/contact/Contact";
 import "../../index.css";
 
@@ -37,8 +37,8 @@ const Home = () => {
         <Profession />
       </div>
 
-      <div className="bg-base-200 shadow-md relative z-20 transition-colors duration-300">
-        <HappyClients />
+      <div className="bg-base-200 border-t border-base-content/10 relative transition-colors duration-300">
+        <Certificates />
       </div>
       
       <Contact />

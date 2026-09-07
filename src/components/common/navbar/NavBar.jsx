@@ -9,6 +9,7 @@ const navItems = [
   { id: 4, name: "Portfolio", url: "portfolio" },
   { id: 5, name: "Skills", url: "skills" },
   { id: 6, name: "Services", url: "services" },
+  { id: 7, name: "Certificates", url: "certificates" },
 ];
 
 const handleMenuClick = () => {
