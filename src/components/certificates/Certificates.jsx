@@ -288,17 +288,17 @@ const Certificates = () => {
           >
             {filteredCertificates.map((cert) => (
               <SwiperSlide key={cert.id} className="w-full">
-                <div className="w-full rounded-2xl bg-base-100 border border-base-content/10 shadow-xl overflow-hidden grid grid-cols-1 lg:grid-cols-12 transition-all duration-300">
+                <div className="w-full rounded-2xl bg-base-100 border border-base-content/10 shadow-xl overflow-hidden grid grid-cols-1 lg:grid-cols-12 lg:h-[390px] transition-all duration-300">
                   {/* Left Column: Certificate Photo / Preview (7 Cols) */}
                   <div
-                    className="lg:col-span-7 relative bg-base-300/60 p-4 sm:p-6 flex items-center justify-center cursor-pointer group overflow-hidden border-b lg:border-b-0 lg:border-r border-base-content/10"
+                    className="lg:col-span-7 h-full relative bg-base-300/40 p-4 sm:p-5 flex items-center justify-center cursor-pointer group overflow-hidden border-b lg:border-b-0 lg:border-r border-base-content/10"
                     onClick={() => setSelectedCert(cert)}
                   >
-                    <div className="w-full aspect-[16/11] rounded-xl overflow-hidden shadow-lg border border-base-content/10 relative bg-base-200">
+                    <div className="w-full h-full max-h-[310px] aspect-[16/11] rounded-xl overflow-hidden shadow-md border border-base-content/10 relative bg-base-200/60 flex items-center justify-center">
                       <img
                         src={cert.image}
                         alt={cert.title}
-                        className="w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
+                        className="w-full h-full object-contain p-1.5 transition-transform duration-700 ease-out group-hover:scale-105"
                         loading="lazy"
                       />
 
@@ -312,7 +312,7 @@ const Certificates = () => {
                     </div>
 
                     {/* Issuer & Date Badges on top of image */}
-                    <div className="absolute top-6 left-6 right-6 flex items-center justify-between pointer-events-none">
+                    <div className="absolute top-5 left-5 right-5 flex items-center justify-between pointer-events-none">
                       <span className="px-3 py-1 rounded-lg text-xs font-semibold backdrop-blur-md bg-black/70 text-white border border-white/10 flex items-center gap-1.5 shadow-sm">
                         <FontAwesomeIcon icon={faBuilding} className="text-picto-primary text-[10px]" />
                         <span className="truncate max-w-[160px]">{cert.issuer.split("(")[0]}</span>
@@ -325,60 +325,70 @@ const Certificates = () => {
                   </div>
 
                   {/* Right Column: Information & Details (5 Cols) */}
-                  <div className="lg:col-span-5 p-6 sm:p-8 flex flex-col justify-between">
+                  <div className="lg:col-span-5 h-full p-5 sm:p-6 flex flex-col justify-between">
                     <div>
                       {/* Category Badge */}
-                      <div className="mb-2.5">
-                        <span className="px-3 py-1 rounded-full text-xs font-semibold bg-picto-primary/10 text-picto-primary border border-picto-primary/20">
+                      <div className="mb-2">
+                        <span className="px-3 py-0.5 rounded-full text-[11px] font-semibold bg-picto-primary/10 text-picto-primary border border-picto-primary/20">
                           {cert.category}
                         </span>
                       </div>
 
-                      {/* Certificate Title */}
+                      {/* Certificate Title (Consistent height for 1 or 2 lines) */}
                       <h3
                         onClick={() => setSelectedCert(cert)}
-                        className="text-xl sm:text-2xl font-bold text-base-content hover:text-picto-primary transition-colors duration-300 cursor-pointer mb-2.5 leading-snug"
+                        className="text-base sm:text-lg font-bold text-base-content hover:text-picto-primary transition-colors duration-300 cursor-pointer mb-1.5 line-clamp-2 leading-snug min-h-[2.8rem] flex items-center"
+                        title={cert.title}
                       >
                         {cert.title}
                       </h3>
 
                       {/* Issuing Authority */}
-                      <p className="text-xs sm:text-sm font-medium opacity-70 text-base-content mb-4 flex items-center gap-2">
-                        <FontAwesomeIcon icon={faAward} className="text-picto-primary" />
-                        <span>{cert.issuer}</span>
+                      <p className="text-xs font-medium opacity-70 text-base-content mb-2.5 flex items-center gap-2 truncate">
+                        <FontAwesomeIcon icon={faAward} className="text-picto-primary shrink-0" />
+                        <span className="truncate">{cert.issuer}</span>
                       </p>
 
-                      {/* Description */}
-                      <p className="text-xs sm:text-sm opacity-80 text-base-content leading-relaxed mb-5">
+                      {/* Description (Uniform 3-line clamp for equal compact height) */}
+                      <p className="text-xs sm:text-[13px] opacity-75 text-base-content leading-relaxed mb-3 line-clamp-3 min-h-[3.3rem]">
                         {cert.description}
                       </p>
 
-                      {/* Verified Skills */}
+                      {/* Verified Skills (Uniform top 4 chips + more tag) */}
                       <div>
-                        <p className="text-[11px] uppercase tracking-wider font-semibold opacity-60 text-base-content mb-2">
-                          Competencies &amp; Skills:
+                        <p className="text-[10px] uppercase tracking-wider font-semibold opacity-60 text-base-content mb-1.5">
+                          Competencies:
                         </p>
-                        <div className="flex flex-wrap gap-1.5">
-                          {cert.skills.map((skill, sIdx) => (
+                        <div className="flex flex-wrap gap-1.5 max-h-[58px] overflow-hidden">
+                          {cert.skills.slice(0, 4).map((skill, sIdx) => (
                             <span
                               key={sIdx}
-                              className="px-2.5 py-1 rounded-md text-xs font-medium bg-base-200 text-base-content/90 border border-base-content/10"
+                              className="px-2 py-0.5 rounded-md text-[11px] font-medium bg-base-200 text-base-content/90 border border-base-content/10 truncate max-w-[150px]"
                             >
                               {skill}
                             </span>
                           ))}
+                          {cert.skills.length > 4 && (
+                            <span className="px-2 py-0.5 rounded-md text-[11px] font-semibold bg-picto-primary/10 text-picto-primary border border-picto-primary/20">
+                              +{cert.skills.length - 4} more
+                            </span>
+                          )}
                         </div>
                       </div>
                     </div>
 
                     {/* Action Button Footer */}
-                    <div className="pt-6 mt-6 border-t border-base-content/10 flex items-center justify-end">
+                    <div className="pt-3 mt-3 border-t border-base-content/10 flex items-center justify-between">
+                      <span className="text-xs opacity-60 text-base-content flex items-center gap-1.5">
+                        <FontAwesomeIcon icon={faCalendarDays} className="text-picto-primary text-xs" />
+                        <span>{cert.date}</span>
+                      </span>
                       <button
                         onClick={() => setSelectedCert(cert)}
-                        className="btn btn-sm btn-primary text-white text-xs font-semibold px-5 flex items-center gap-2 shadow-md shadow-picto-primary/25 hover:shadow-lg transition-all duration-300 w-full sm:w-auto justify-center"
+                        className="btn btn-xs sm:btn-sm btn-primary text-white text-xs font-semibold px-4 flex items-center gap-1.5 shadow-sm shadow-picto-primary/20 hover:shadow-md transition-all duration-300 cursor-pointer"
                       >
-                        <FontAwesomeIcon icon={faEye} className="text-xs" />
-                        <span>Full Preview</span>
+                        <FontAwesomeIcon icon={faEye} className="text-[11px]" />
+                        <span>View Details</span>
                       </button>
                     </div>
                   </div>
