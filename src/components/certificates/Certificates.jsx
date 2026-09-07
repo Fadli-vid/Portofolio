@@ -40,6 +40,7 @@ import {
 // Certificate Assets:
 import pcapCert from "../../assets/images/certificate/PCAP.jpg";
 import pklCert from "../../assets/images/certificate/PKL.png";
+import mikrotikCert from "../../assets/images/certificate/Mikrotik.jpg";
 import sampleCertWeb from "../../assets/images/certificate/sample-cert-web.svg";
 import sampleCertCloud from "../../assets/images/certificate/sample-cert-cloud.svg";
 import sampleCertUiux from "../../assets/images/certificate/sample-cert-uiux.svg";
@@ -82,6 +83,25 @@ const certificatesData = [
   },
   {
     id: 3,
+    title: "MTCNA: MikroTik Certified Network Associate",
+    issuer: "MikroTik (Mikrotīkls SIA, Riga, Latvia)",
+    date: "17 Jan 2026",
+    category: "Networking & Infrastructure",
+    image: mikrotikCert,
+    skills: [
+      "MikroTik RouterOS & RouterBOARD",
+      "IP Addressing & Subnetting",
+      "Routing & Gateway Configuration",
+      "Firewall Filter Rules & NAT",
+      "Bandwidth Management & Queues",
+      "Network Bridging & Wireless",
+      "Tunnels & VPNs (PPPoE, SSTP)",
+    ],
+    description:
+      "Official international network engineering certification awarded by MikroTik (Mikrotīkls SIA, Latvia) recognizing Fadli Santoso as a MikroTik Certified Network Associate (MTCNA, Certificate No: 2601NA9715). Validates rigorous proficiency in MikroTik RouterOS administration, IP routing, firewall protection, Network Address Translation (NAT), bandwidth queue optimization, secure bridging, and network tunnel protocols.",
+  },
+  {
+    id: 4,
     title: "Full Stack React & Next.js Specialist",
     issuer: "Modern Web Academy",
     date: "2024",
@@ -92,7 +112,7 @@ const certificatesData = [
       "Certification mastering the modern React ecosystem and Next.js App Router, covering Server-Side Rendering (SSR), Static Site Generation (SSG), RESTful API integration, and interactive component architecture.",
   },
   {
-    id: 4,
+    id: 5,
     title: "Cloud & DevOps Fundamentals",
     issuer: "Cloud Academy International",
     date: "2024",
@@ -103,7 +123,7 @@ const certificatesData = [
       "Comprehensive training and credential in containerization with Docker, automated Continuous Integration and Continuous Deployment (CI/CD) pipelines, Linux server administration, and scalable cloud deployments.",
   },
   {
-    id: 5,
+    id: 6,
     title: "Professional UI/UX & Frontend Architecture",
     issuer: "Creative Design Institute",
     date: "2024",
@@ -114,7 +134,7 @@ const certificatesData = [
       "Professional accreditation in user research, intuitive user experience design, interactive wireframing, high-fidelity prototyping, and scalable, accessible design systems in Figma.",
   },
   {
-    id: 6,
+    id: 7,
     title: "Web Security & OWASP Standards",
     issuer: "Cyber Defense Authority",
     date: "2024",
