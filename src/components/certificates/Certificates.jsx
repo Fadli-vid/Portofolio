@@ -43,10 +43,6 @@ import pklCert from "../../assets/images/certificate/PKL.png";
 import mikrotikCert from "../../assets/images/certificate/Mikrotik.jpg";
 import blenderCert from "../../assets/images/certificate/3D-Design-Course.jpg";
 import itBootcampCert from "../../assets/images/certificate/IT-Bootcamp.jpg";
-import sampleCertWeb from "../../assets/images/certificate/sample-cert-web.svg";
-import sampleCertCloud from "../../assets/images/certificate/sample-cert-cloud.svg";
-import sampleCertUiux from "../../assets/images/certificate/sample-cert-uiux.svg";
-import sampleCertSecurity from "../../assets/images/certificate/sample-cert-security.svg";
 
 const certificatesData = [
   {
@@ -136,50 +132,6 @@ const certificatesData = [
     ],
     description:
       "Certificate of participation in the intensive IT Bootcamp 'Digital Transformation: IoT & AI Integration for Future Solutions' at Asyana Sentul organized by Universitas Bina Sarana Informatika (UBSI). Built and engineered an automated smart indoor fire extinguisher prototype using an ESP LoLin microcontroller, flame detection sensors, telemetry logging to ThingSpeak, interactive fire status dashboard on Blynk, and instant emergency alert dispatches via Telegram Bot API.",
-  },
-  {
-    id: 6,
-    title: "Full Stack React & Next.js Specialist",
-    issuer: "Modern Web Academy",
-    date: "2024",
-    category: "Web Development",
-    image: sampleCertWeb,
-    skills: ["Next.js", "React 19", "Tailwind CSS", "TypeScript", "State Management"],
-    description:
-      "Certification mastering the modern React ecosystem and Next.js App Router, covering Server-Side Rendering (SSR), Static Site Generation (SSG), RESTful API integration, and interactive component architecture.",
-  },
-  {
-    id: 7,
-    title: "Cloud & DevOps Fundamentals",
-    issuer: "Cloud Academy International",
-    date: "2024",
-    category: "Cloud & Security",
-    image: sampleCertCloud,
-    skills: ["Docker", "CI/CD", "Cloud Architecture", "Vercel / Cloudflare", "Linux"],
-    description:
-      "Comprehensive training and credential in containerization with Docker, automated Continuous Integration and Continuous Deployment (CI/CD) pipelines, Linux server administration, and scalable cloud deployments.",
-  },
-  {
-    id: 8,
-    title: "Professional UI/UX & Frontend Architecture",
-    issuer: "Creative Design Institute",
-    date: "2024",
-    category: "Web Development",
-    image: sampleCertUiux,
-    skills: ["Figma", "Design Systems", "Wireframing", "Interactive Prototyping"],
-    description:
-      "Professional accreditation in user research, intuitive user experience design, interactive wireframing, high-fidelity prototyping, and scalable, accessible design systems in Figma.",
-  },
-  {
-    id: 9,
-    title: "Web Security & OWASP Standards",
-    issuer: "Cyber Defense Authority",
-    date: "2024",
-    category: "Cloud & Security",
-    image: sampleCertSecurity,
-    skills: ["OWASP Top 10", "Penetration Testing", "API Security", "Data Protection"],
-    description:
-      "Professional certification in web application security, mitigating critical vulnerabilities such as SQL Injection and XSS, implementing robust authentication, and adhering to modern OWASP security guidelines.",
   },
 ];
 
