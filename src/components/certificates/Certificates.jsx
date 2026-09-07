@@ -42,6 +42,7 @@ import pcapCert from "../../assets/images/certificate/PCAP.jpg";
 import pklCert from "../../assets/images/certificate/PKL.png";
 import mikrotikCert from "../../assets/images/certificate/Mikrotik.jpg";
 import blenderCert from "../../assets/images/certificate/3D-Design-Course.jpg";
+import itBootcampCert from "../../assets/images/certificate/IT-Bootcamp.jpg";
 import sampleCertWeb from "../../assets/images/certificate/sample-cert-web.svg";
 import sampleCertCloud from "../../assets/images/certificate/sample-cert-cloud.svg";
 import sampleCertUiux from "../../assets/images/certificate/sample-cert-uiux.svg";
@@ -120,6 +121,24 @@ const certificatesData = [
   },
   {
     id: 5,
+    title: "IoT Bootcamp: Smart Fire Suppression & Telemetry System",
+    issuer: "Universitas Bina Sarana Informatika (UBSI)",
+    date: "17 Jul 2025",
+    category: "IoT & Embedded Systems",
+    image: itBootcampCert,
+    skills: [
+      "ESP LoLin NodeMCU (ESP8266)",
+      "Flame Sensor & Relay Actuation",
+      "ThingSpeak Cloud Telemetry",
+      "Blynk IoT Real-Time Dashboard",
+      "Telegram Bot API Notifications",
+      "Embedded C / Arduino Framework",
+    ],
+    description:
+      "Certificate of participation in the intensive IT Bootcamp 'Digital Transformation: IoT & AI Integration for Future Solutions' at Asyana Sentul organized by Universitas Bina Sarana Informatika (UBSI). Built and engineered an automated smart indoor fire extinguisher prototype using an ESP LoLin microcontroller, flame detection sensors, telemetry logging to ThingSpeak, interactive fire status dashboard on Blynk, and instant emergency alert dispatches via Telegram Bot API.",
+  },
+  {
+    id: 6,
     title: "Full Stack React & Next.js Specialist",
     issuer: "Modern Web Academy",
     date: "2024",
@@ -130,7 +149,7 @@ const certificatesData = [
       "Certification mastering the modern React ecosystem and Next.js App Router, covering Server-Side Rendering (SSR), Static Site Generation (SSG), RESTful API integration, and interactive component architecture.",
   },
   {
-    id: 6,
+    id: 7,
     title: "Cloud & DevOps Fundamentals",
     issuer: "Cloud Academy International",
     date: "2024",
@@ -141,7 +160,7 @@ const certificatesData = [
       "Comprehensive training and credential in containerization with Docker, automated Continuous Integration and Continuous Deployment (CI/CD) pipelines, Linux server administration, and scalable cloud deployments.",
   },
   {
-    id: 7,
+    id: 8,
     title: "Professional UI/UX & Frontend Architecture",
     issuer: "Creative Design Institute",
     date: "2024",
@@ -152,7 +171,7 @@ const certificatesData = [
       "Professional accreditation in user research, intuitive user experience design, interactive wireframing, high-fidelity prototyping, and scalable, accessible design systems in Figma.",
   },
   {
-    id: 8,
+    id: 9,
     title: "Web Security & OWASP Standards",
     issuer: "Cyber Defense Authority",
     date: "2024",
