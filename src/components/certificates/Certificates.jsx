@@ -41,6 +41,7 @@ import {
 import pcapCert from "../../assets/images/certificate/PCAP.jpg";
 import pklCert from "../../assets/images/certificate/PKL.png";
 import mikrotikCert from "../../assets/images/certificate/Mikrotik.jpg";
+import blenderCert from "../../assets/images/certificate/3D-Design-Course.jpg";
 import sampleCertWeb from "../../assets/images/certificate/sample-cert-web.svg";
 import sampleCertCloud from "../../assets/images/certificate/sample-cert-cloud.svg";
 import sampleCertUiux from "../../assets/images/certificate/sample-cert-uiux.svg";
@@ -102,6 +103,23 @@ const certificatesData = [
   },
   {
     id: 4,
+    title: "3D Design & Modeling with Blender",
+    issuer: "Rubrik Grafis",
+    date: "09 Aug 2022",
+    category: "Multimedia & Design",
+    image: blenderCert,
+    skills: [
+      "Blender 3D Modeling",
+      "3D Asset Creation",
+      "Materials & PBR Texturing",
+      "Lighting & Camera Staging",
+      "Cycles & Eevee Rendering",
+    ],
+    description:
+      "Certificate of completion for the professional graphic design online course '3D Design with Blender' organized by Rubrik Grafis. Validates competencies in 3D polygonal modeling, low-poly and high-poly asset generation, material shading and PBR texturing, scene composition, and rendering with Cycles and Eevee.",
+  },
+  {
+    id: 5,
     title: "Full Stack React & Next.js Specialist",
     issuer: "Modern Web Academy",
     date: "2024",
@@ -112,7 +130,7 @@ const certificatesData = [
       "Certification mastering the modern React ecosystem and Next.js App Router, covering Server-Side Rendering (SSR), Static Site Generation (SSG), RESTful API integration, and interactive component architecture.",
   },
   {
-    id: 5,
+    id: 6,
     title: "Cloud & DevOps Fundamentals",
     issuer: "Cloud Academy International",
     date: "2024",
@@ -123,7 +141,7 @@ const certificatesData = [
       "Comprehensive training and credential in containerization with Docker, automated Continuous Integration and Continuous Deployment (CI/CD) pipelines, Linux server administration, and scalable cloud deployments.",
   },
   {
-    id: 6,
+    id: 7,
     title: "Professional UI/UX & Frontend Architecture",
     issuer: "Creative Design Institute",
     date: "2024",
@@ -134,7 +152,7 @@ const certificatesData = [
       "Professional accreditation in user research, intuitive user experience design, interactive wireframing, high-fidelity prototyping, and scalable, accessible design systems in Figma.",
   },
   {
-    id: 7,
+    id: 8,
     title: "Web Security & OWASP Standards",
     issuer: "Cyber Defense Authority",
     date: "2024",
