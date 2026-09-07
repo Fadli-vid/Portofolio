@@ -257,17 +257,10 @@ const Certificates = () => {
                   {/* Right Column: Information & Details (5 Cols) */}
                   <div className="lg:col-span-5 h-full p-5 sm:p-6 flex flex-col justify-between">
                     <div>
-                      {/* Category Badge */}
-                      <div className="mb-2">
-                        <span className="px-3 py-0.5 rounded-full text-[11px] font-semibold bg-picto-primary/10 text-picto-primary border border-picto-primary/20">
-                          {cert.category}
-                        </span>
-                      </div>
-
                       {/* Certificate Title (Consistent height for 1 or 2 lines) */}
                       <h3
                         onClick={() => setSelectedCert(cert)}
-                        className="text-base sm:text-lg font-bold text-base-content hover:text-picto-primary transition-colors duration-300 cursor-pointer mb-1.5 line-clamp-2 leading-snug min-h-[2.8rem] flex items-center"
+                        className="text-base sm:text-lg font-bold text-base-content hover:text-picto-primary transition-colors duration-300 cursor-pointer mb-2 line-clamp-2 leading-snug min-h-[2.8rem] flex items-center"
                         title={cert.title}
                       >
                         {cert.title}
