@@ -14,7 +14,6 @@ import {
   faBuilding,
   faChevronLeft,
   faChevronRight,
-  faCertificate,
 } from "@fortawesome/free-solid-svg-icons";
 
 // ============================================================================
@@ -136,27 +135,8 @@ const certificatesData = [
 ];
 
 const Certificates = () => {
-  const [selectedCategory, setSelectedCategory] = useState("All");
   const [selectedCert, setSelectedCert] = useState(null);
-  const [currentIndex, setCurrentIndex] = useState(0);
   const swiperRef = useRef(null);
-
-  // Ambil daftar kategori unik
-  const categories = ["All", ...new Set(certificatesData.map((item) => item.category))];
-
-  // Filter sertifikat berdasarkan kategori aktif
-  const filteredCertificates =
-    selectedCategory === "All"
-      ? certificatesData
-      : certificatesData.filter((item) => item.category === selectedCategory);
-
-  // Reset slide posisi ketika kategori berubah
-  useEffect(() => {
-    if (swiperRef.current) {
-      swiperRef.current.slideTo(0);
-      setCurrentIndex(0);
-    }
-  }, [selectedCategory]);
 
   // Tutup modal ketika tombol ESC ditekan
   useEffect(() => {
@@ -189,49 +169,6 @@ const Certificates = () => {
         </p>
       </div>
 
-      {/* Control Bar: Categories & Counter */}
-      <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 mb-8">
-        {/* Filter Tabs */}
-        <div className="flex flex-wrap justify-center sm:justify-start items-center gap-2">
-          {categories.map((cat) => {
-            const count =
-              cat === "All"
-                ? certificatesData.length
-                : certificatesData.filter((c) => c.category === cat).length;
-            const isActive = selectedCategory === cat;
-
-            return (
-              <button
-                key={cat}
-                onClick={() => setSelectedCategory(cat)}
-                className={`px-3.5 py-1.5 rounded-full text-xs md:text-sm font-medium transition-all duration-300 flex items-center gap-1.5 cursor-pointer border ${
-                  isActive
-                    ? "bg-picto-primary text-white border-picto-primary shadow-sm shadow-picto-primary/30 scale-102"
-                    : "bg-base-100 text-base-content/80 border-base-content/10 hover:border-picto-primary/50 hover:text-picto-primary"
-                }`}
-              >
-                <span>{cat}</span>
-                <span
-                  className={`text-[10px] px-1.5 py-0.2 rounded-full ${
-                    isActive ? "bg-white/20 text-white" : "bg-base-200 text-base-content/60"
-                  }`}
-                >
-                  {count}
-                </span>
-              </button>
-            );
-          })}
-        </div>
-
-        {/* Counter Badge */}
-        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-base-100 border border-base-content/15 text-xs font-semibold text-base-content shadow-sm">
-          <FontAwesomeIcon icon={faCertificate} className="text-picto-primary" />
-          <span>
-            Certificate {currentIndex + 1} of {filteredCertificates.length}
-          </span>
-        </div>
-      </div>
-
       {/* ==================================================================== */}
       {/* Spotlight Single-Slide Showcase Container */}
       {/* ==================================================================== */}
@@ -239,7 +176,7 @@ const Certificates = () => {
         {/* Previous Navigation Button */}
         <button
           onClick={() => swiperRef.current?.slidePrev()}
-          disabled={filteredCertificates.length <= 1}
+          disabled={certificatesData.length <= 1}
           className="absolute -left-3 sm:-left-6 top-1/2 -translate-y-1/2 z-20 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-base-100 border border-base-content/15 shadow-xl hover:border-picto-primary hover:bg-picto-primary hover:text-white text-base-content flex items-center justify-center transition-all duration-300 cursor-pointer disabled:opacity-30 disabled:pointer-events-none"
           aria-label="Previous Certificate"
           title="Previous"
@@ -250,7 +187,7 @@ const Certificates = () => {
         {/* Next Navigation Button */}
         <button
           onClick={() => swiperRef.current?.slideNext()}
-          disabled={filteredCertificates.length <= 1}
+          disabled={certificatesData.length <= 1}
           className="absolute -right-3 sm:-right-6 top-1/2 -translate-y-1/2 z-20 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-base-100 border border-base-content/15 shadow-xl hover:border-picto-primary hover:bg-picto-primary hover:text-white text-base-content flex items-center justify-center transition-all duration-300 cursor-pointer disabled:opacity-30 disabled:pointer-events-none"
           aria-label="Next Certificate"
           title="Next"
@@ -261,17 +198,14 @@ const Certificates = () => {
         {/* Swiper: Displaying EXACTLY 1 CERTIFICATE per view with infinite loop */}
         <div className="w-full cert-swiper">
           <Swiper
-            key={`${selectedCategory}-${filteredCertificates.length}`}
+            key={certificatesData.length}
             onBeforeInit={(swiper) => {
               swiperRef.current = swiper;
-            }}
-            onSlideChange={(swiper) => {
-              setCurrentIndex(swiper.realIndex);
             }}
             modules={[Pagination, Autoplay]}
             slidesPerView={1}
             spaceBetween={30}
-            loop={filteredCertificates.length > 1}
+            loop={certificatesData.length > 1}
             speed={750}
             grabCursor={true}
             pagination={{ clickable: true }}
@@ -282,7 +216,7 @@ const Certificates = () => {
             }}
             className="!pb-2"
           >
-            {filteredCertificates.map((cert) => (
+            {certificatesData.map((cert) => (
               <SwiperSlide key={cert.id} className="w-full">
                 <div className="w-full rounded-2xl bg-base-100 border border-base-content/10 shadow-xl overflow-hidden grid grid-cols-1 lg:grid-cols-12 lg:h-[390px] transition-all duration-300">
                   {/* Left Column: Certificate Photo / Preview (7 Cols) */}
