@@ -182,10 +182,6 @@ const Certificates = () => {
     >
       {/* Header Section */}
       <div className="max-w-144.25 text-center mx-auto mb-10 md:mb-12">
-        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-picto-primary/10 border border-picto-primary/20 text-picto-primary text-xs font-semibold mb-4">
-          <FontAwesomeIcon icon={faAward} />
-          <span>Licenses &amp; Certifications</span>
-        </div>
         <p className="section-title mb-4">Certificates &amp; Credentials</p>
         <p className="font-normal text-base md:text-lg opacity-70 text-base-content">
           A curated collection of official certifications and verified technical credentials.
