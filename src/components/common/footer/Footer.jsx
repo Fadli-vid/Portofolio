@@ -18,9 +18,6 @@ const Footer = () => {
       <div className="flex max-md:flex-col justify-between mx-0 items-center h-full w-full text-neutral-200">
         <a href="#" className="flex items-center border-0">
           <img src={logo} className="h-8 sm:h-14 rounded-2xl invert" alt="logo" />
-          <p className="text-3xl sm:text-[32px] my-auto ms-[12px] font-semibold">
-            Fadli
-          </p>
         </a>
         <div className="mx-7 max-md:my-7 text-center">
           {navItems.map((item) => (
